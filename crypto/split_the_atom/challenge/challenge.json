@@ -1,0 +1,13 @@
+{
+  "title": "Split The Atom",
+  "category": "Crypto",
+  "description": "LxrXLsgmbyT6KmHsMjAuOjAznxckLlW9+lQtKmHsMjAuOiXXnsk5nxhmKxh4MmS6TJbC",
+  "link": "",
+  "points": "50",
+  "flag": "flag{security-through-obscurity-has-drawbacks}",
+  "max_tries": "99",
+  "active": "0",
+  "files": [
+  ],
+  "author": "Dave Petrasovic"
+}
