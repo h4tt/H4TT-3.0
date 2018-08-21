@@ -1,10 +1,10 @@
 {
   "title": "Boxed Salad",
   "category": "Crypto",
-  "description": "f{shm-nc3lC440t-1ra4rdrh1p}g3--34-h",
+  "description": "f{shm-nc3lc440t-1ra4rdrh1p}g3--34-h",
   "link": "",
   "points": "50",
-  "flag": "flag{C43s4r-h4d-m0r3-th4n-1-c1ph3r}",
+  "flag": "flag{c43s4r-h4d-m0r3-th4n-1-c1ph3r}",
   "max_tries": "99",
   "active": "0",
   "files": [

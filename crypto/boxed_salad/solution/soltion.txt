@@ -2,4 +2,4 @@ Based off of the Casear Shift cipher is the Caesar Box cipher.
 This tool will help with solving: https://www.dcode.fr/caesar-box-cipher
 You will need to know the box width/ size. This can be enumerated. The correct value for this is 4
 
-flag{C43s4r-h4d-m0r3-th4n-1-c1ph3r}
+flag{c43s4r-h4d-m0r3-th4n-1-c1ph3r}
