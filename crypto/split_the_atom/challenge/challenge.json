@@ -1,10 +1,10 @@
 {
   "title": "Split The Atom",
   "category": "Crypto",
-  "description": "LxrXLsgmbyT6KmHsMjAuOjAznxckLlW9+lQtKmHsMjAuOiXXnsk5nxhmKxh4MmS6TJbC",
+  "description": "LxrXLsgmbyStKmHsSjAujmAzn41kLlXFSIPkKmHsSjAujlWJnkc5n4AmK4A4Mtg6TJbC",
   "link": "",
   "points": "50",
-  "flag": "flag{security-through-obscurity-has-drawbacks}",
+  "flag": "flag{s3cur1ty_thr0ugh_0b5cur1ty_h4s_dr4wb4ck5}",
   "max_tries": "99",
   "active": "0",
   "files": [
