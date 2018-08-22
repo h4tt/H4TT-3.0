@@ -1,0 +1,13 @@
+{
+    "title": "Talk To Me",
+    "category": "Pwn",
+    "description": "We got into the Evilcorp CEO's family computer. Looks like something important was left lying around.",
+    "link": "",
+    "points": "0",
+    "flag": "flag{h1c0ry_d1c0ry_d0c}",
+    "max_tries": "99",
+    "active": "0",
+    "files": [
+    ],
+    "author": "Matt Penny"
+}
