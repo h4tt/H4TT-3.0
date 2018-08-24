@@ -1,36 +1,12 @@
-This challenge needs to be hosted on a remote server. Contestants are to have *unprivileged* access.
-To setup:
+This challenge needs to be hosted on a remote server. Contestants are to have
+*unprivileged* access.
 
-0) If the system supports sysctl, run `sysctl fs.protected_symlinks` and verify that the value is 0.
-   If the value is 1, run `sysctl -w fs.protected_symlinks=0`. This security setting needs to be
-   disabled for the challenge to work
+A docker image has been created to facilitate this while also isolating concurrent
+users from each other. Run `make` followed by `make docker` to create it.
 
-1) Create a directory called `challenge` with permissions and ownership as follows:
+On the remote server, if the system supports sysctl, run `sysctl fs.protected_symlinks`
+and verify that the value is 0. If the value is 1, run `sysctl -w fs.protected_symlinks=0`.
+This security setting needs to be disabled for the challenge to work.
 
-  ```
-  mkdir challenge
-  chown root:root challenge
-  chmod 1777 challenge
-  ```
-
-2) Within the `challenge` directory, create the flag and restrict access so that only root can read it
-  ```
-  echo "flag{h1c0ry_d1c0ry_d0c}" > challenge/flag
-  chown root:root challenge/flag
-  chmod 600 challenge/flag
-  ```
-
-3) Within the `challenge` directory, create the words file and change the owner and group to the user that
-   contestants will log in as:
-   ```
-   echo "Hello there! I have a secret... I bet you'll never guess what it is." > challenge/words.txt
-   chown USER:USER challenge/words.txt
-   chmod 644 challenge/words.txt
-   ```
-
-4) Copy the `talk` executable to the `challenge` directory on the remote server, then change its owner, group,
-   and permissions as follows:
-  ```
-  chown root:root challenge/talk
-  chmod 6755 challenge/talk
-  ```
+Create an unprivileged user and set its login shell to `run-challenge.sh` to start the
+challenge container for each user who connects.
