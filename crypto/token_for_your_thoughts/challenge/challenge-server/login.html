@@ -1,0 +1,40 @@
+<!-- I spent far more time making this sweet UI than the challenge and I hope you like it -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>ECorp login</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Styles -->
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/login.css" rel="stylesheet">
+
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/particles.min.js"></script>
+		<script type="text/javascript" src="js/login.js"></script>
+	</head>
+
+	<!-- Cool particle background because we're hackers -->
+	<body id="particles-js">
+		<span id="logo">E</span>
+		<div class="centered">
+			<h3 id="title">Log in to ECorp</h3>
+			<div id="alert" class="alert alert-block alert-error" style="display:none">
+				<a class="close" href="#" id="close-alert">×</a>
+				<h4>Login failed</h4>
+				<p id="alert-reason">Unknown error.</p>
+			</div>
+
+			<input autofocus="autofocus" placeholder="Username" id="username" type="text" class="input-field">
+			<input placeholder="Token" id="token" type="password" class="input-field">
+			<button class="btn btn-login" name="button" type="submit" id="login">Login</button>
+		</div>
+		<div class="footer">
+			<p>© 2018 ECorp. All rights reserved.</p>
+		</div>
+	</body>
+</html>

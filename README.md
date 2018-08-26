@@ -4,6 +4,8 @@
 ## crypto
 [So Two Thousand and Late | 30](https://github.com/h4tt/H4TT-3.0/tree/master/crypto/2000_and_late)
 
+[Token for your Thoughts | 40](https://github.com/h4tt/H4TT-3.0/tree/master/crypto/token_for_your_thoughts)
+
 [Boxed Salad | 50](https://github.com/h4tt/H4TT-3.0/tree/master/crypto/boxed_salad)
 
 [Split The Atom | 50](https://github.com/h4tt/H4TT-3.0/tree/master/crypto/split_the_atom)

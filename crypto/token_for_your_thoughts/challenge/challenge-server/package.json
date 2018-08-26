@@ -1,0 +1,11 @@
+{
+  "name": "h4tt-rand-token-auth",
+  "version": "1.0.0",
+  "description": "An intentionally vulnerable login page for h4tt-3.0",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.16.0"
+  },
+  "author": "Matt Penny",
+  "license": "MIT"
+}
