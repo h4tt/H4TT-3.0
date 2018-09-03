@@ -4,7 +4,7 @@ import json
 H4TT_VERSION = "3.0"
 
 jsons = []
-output = "![sreencast](poster.PNG)\n\n# Hack All The Things Round " + H4TT_VERSION + "\n"
+output = "![sreencast](poster.PNG)\n\n# Hack All The Things Round %s\n" % H4TT_VERSION
 
 def CleanFolders():
     filenames = os.listdir (".")
@@ -22,10 +22,10 @@ def CleanFolders():
         if folder in blacklistFolders:
             continue
 
-        subFilenames = os.listdir ("./" + folder)
+        subFilenames = os.listdir(folder)
         subFolders = []
         for filename in subFilenames:
-            if os.path.isdir(os.path.join(os.path.abspath("./" + folder), filename)):
+            if os.path.isdir(os.path.join(os.path.abspath(folder), filename)):
                 subFolders.append(filename)
 
         for subFolder in subFolders:
@@ -35,18 +35,22 @@ def CleanFolders():
             newName = newName.replace(" ", "_")
             newName = newName.replace("-", "_")
 
-            os.rename("./" + folder + "/" + subFolder, "./" + folder + "/" + newName)
+            os.rename(os.path.join(folder, subFolder), os.path.join(folder, newName))
 
 def ScrapeJSON(output):
-    for root, dirs, files in os.walk("./"):
+    for root, dirs, files in os.walk("."):
         for file in files:
             if file.endswith(".json"):
-                if root.split("/")[1] != "[template]":
-                    jsons.append(root + "/" + file)
+                if root.split(os.sep)[1] != "[template]":
+                    jsons.append(os.path.join(root, file))
 
     categories = {}
 
     for file in jsons:
+        # Skip non-challenge JSON files
+        if not file.lower().endswith("challenge.json"):
+            continue
+
         with open(file) as thisJsonFile:
             data = json.load(thisJsonFile)
             thisCat = data['category'].lower()
@@ -77,9 +81,13 @@ def BuildReadme(categories, output):
         
         for challenge in listChallPoints:
             thisChall = categories[thisCat][challenge[1]]
-            output += "[" + thisChall['title'] + " | " + thisChall['points']
-            output += "](https://github.com/h4tt/H4TT-" + H4TT_VERSION + "/tree/master/" + thisCat + "/" + thisChall['INTERNAL_PATH'].split("/")[2] + ")\n\n"
-
+            output += "[%s | %s](https://github.com/h4tt/H4TT-%s/tree/master/%s/%s)\n\n" % (
+                thisChall['title'],
+                thisChall['points'],
+                H4TT_VERSION,
+                thisCat,
+                thisChall['INTERNAL_PATH'].split(os.sep)[2]
+            )
     return output
 
 if __name__ == "__main__":
