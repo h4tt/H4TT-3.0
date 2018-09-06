@@ -47,6 +47,10 @@ def ScrapeJSON(output):
     categories = {}
 
     for file in jsons:
+        # Skip non-challenge JSON files
+        if not file.lower().endswith("challenge.json"):
+            continue
+
         with open(file) as thisJsonFile:
             data = json.load(thisJsonFile)
             thisCat = data['category'].lower()
