@@ -1,0 +1,41 @@
+//- call-search-results.jade
+//- Results view for call log searches
+
+div.search-result-heading Call log search results
+div.list-group.search-result-list
+    //- Use the name of other party in the call if available (they're in the contacts list)
+    - var getPartyName = function(call) {
+        if call.name
+            - return call.name;
+        else if call.pNumFrom
+            - return call.pNumFrom;
+        else
+            - return call.pNumTo;
+    - }
+    
+    - var getCallLength = function(call) {
+        - if (call.dateTimeAnswered) {
+            - var d = new Date(0);
+            - var length = call.dateTimeTerminated - call.dateTimeAnswered;
+            - d.setSeconds(length);
+            - return "Duration: " + d.toISOString().substr(11, 8);
+        - }
+        - else
+            - return "Missed call";
+    - }
+
+
+    //- Display information about each call
+    each call in calls
+        a.list-group-item.search-result(href="#")        
+            h4.list-group-item-heading.result-matchable= getPartyName(call)            
+            p.list-group-item-text.result-matchable= (call.pNumFrom || call.pNumTo)
+            - var d = new Date(call.dateTimePlaced*1000)
+            p.list-group-item-text= (d.toLocaleDateString() + " at " + d.toLocaleTimeString())
+
+            p.list-group-item-text
+                if call.pNumFrom
+                    i.icon-incomingcall  
+                else
+                    i.icon-outgoingcall  
+                span= getCallLength(call)

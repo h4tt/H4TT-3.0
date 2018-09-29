@@ -1,0 +1,77 @@
+.contact-header {
+    padding-bottom: 1em;
+}
+
+.contact-name {
+    font-size: 1.75em;
+    color: black;
+}
+
+.contact-action-button {
+    font-size: 1.2em;
+    float: right;
+    color: black;
+    margin-left: 10px;
+}
+
+#contact-delbtn,
+#contact-editbtn {
+    outline: none;    
+}
+
+#contact-error {
+    display: none;
+    font-size: 0.9em;
+    color: red;
+}
+
+.contact-info-group {
+    padding-bottom: 1.5em;
+    width: 100%;
+}
+
+.contact-info {
+    width: 100%;
+}
+
+.contact-info > .contact-info-label {
+    width: 125px;
+    text-align: left;
+}
+
+.contact-info > .contact-info-val {
+    box-shadow: none;
+    background-color: white;
+}
+
+.contact-info > .contact-info-val[readonly],
+.contact-info > .contact-info-val[readonly] {
+    border-color: #CCC;
+}
+
+.contact-info > .contact-info-val,
+.contact-info > .contact-info-val {
+    border-color: #337ab7;
+}
+
+#contact-phone {
+    margin-top: 15px;
+}
+
+.contact-itemlist a {
+    color: #333;
+    outline: none;
+}
+
+.contact-itemlist > .contact-itemlist-heading {
+    background-image: none;
+}
+
+.contact-itemlist-info {
+    float: right;
+}
+
+.recent-subheading {
+    font-size: 0.85em;
+    margin-left: 5px;
+}

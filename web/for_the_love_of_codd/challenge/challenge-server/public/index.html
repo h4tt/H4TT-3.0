@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="/css/bootstrap/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="/css/whhg.css">
+        <link rel="stylesheet" type="text/css" href="/css/phonedb.css">
+        <script type="text/javascript" src="/js/jquery.min.js"></script>
+        <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="/js/phonedb.js"></script>
+        <script type="text/javascript" src="/js/search.js"></script>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    </head>
+
+    <body>
+        <div class="navbar navbar-fixed-top navbar-inverse" id="phonedb-navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">PhoneDB</a>
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle pull-left" data-toggle="dropdown">
+                            <span class="dropdown-text">Search contacts</span>
+                            <span class="caret"></span>
+                        </a>                        
+                        <ul class="dropdown-menu" id="search-switcher">
+                            <li><a href="#" id="search-switch-contact">Search contacts</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#" id="search-switch-sms-convo">Search SMS conversations</a></li>
+                            <li><a href="#" id="search-switch-sms-msg">Search SMS messages</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#" id="search-switch-call">Search call logs</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="navbar-btn input-group search-bar" id="search-bar">
+                    <span class="input-group-btn" id="search-backbtn">
+                        <a class="btn btn-primary visible-xs-inline-block hidden" href="#">
+                            <i class="icon-chevron-left"></i>
+                            <span>Back</span>
+                        </a>
+                    </span>
+                    <input class="form-control search-input" type="text">
+                    <span class="input-group-btn search-button">
+                        <a class="btn" href="#">
+                            <i class="icon-search"></i>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div id="search-body">
+            <div class="col-xs-12 search-pane" id="search-results">
+                <div class="search-result-heading">Search results</div>
+            </div>
+            <div class="col-sm-6 col-xs-12 hidden-xs search-pane" id="search-result-details"></div>
+        </div>
+    </body>
+</html>

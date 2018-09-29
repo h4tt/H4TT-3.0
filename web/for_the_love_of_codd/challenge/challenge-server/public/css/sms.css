@@ -1,0 +1,81 @@
+.sms-convo-name {
+    text-align: center;
+    background-color: #DDD;
+    margin-top: 0;
+    padding: 5px 0;
+}
+
+.sms-message-container {
+    position: relative;
+    min-width: 300px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.sms-message-container * {
+    text-align: left;
+}
+
+.sms-message-arrow {
+    display: inline-block;
+    margin-top: 10px;
+    border-style: solid;
+}
+
+.sms-message-arrow-left {
+    float: left;
+    border-width: 0 15px 15px 0;
+    border-color: transparent #5CAD5F transparent transparent;
+}
+
+.sms-message-arrow-right {
+    text-align:right;
+    float: right;
+    border-width: 0 0px 15px 15px;
+    border-color: transparent transparent transparent #4986BA;
+}
+
+.sms-message {
+    display: inline-block;
+    width: 235px;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.sms-message-header {
+    height: 1.2em;
+    font-size: 0.8em;
+    color: #fff;
+}
+
+.sms-message-sender {
+    float: left;
+}
+
+.sms-message-header > a.sms-message-sender,
+.sms-message-header > a.sms-message-sender:hover,
+.sms-message-header > a.sms-message-sender:active {
+    text-decoration: underline;
+    color: white;
+    outline: none;
+}
+
+.sms-message-time {
+    float: right;
+}
+
+.sms-message-body {
+    margin-bottom: 0;
+}
+
+.sms-message-incoming > .sms-message {
+    background-color: #5CAD5F;
+}
+
+.sms-message-outgoing {
+    text-align: right;
+}
+
+.sms-message-outgoing > .sms-message {
+    background-color: #4986BA;
+}

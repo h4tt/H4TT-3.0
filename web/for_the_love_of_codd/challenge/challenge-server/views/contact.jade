@@ -1,0 +1,78 @@
+//- contact.jade
+//- Individual contact view
+
+doctype html
+html
+    head
+        link(rel="stylesheet" type="text/css" href="/css/contact.css")
+        script(type="text/javascript" src="/js/contact.js")
+
+    body
+        //- Display basic contact information
+        div.contact-header
+            span.contact-name= contact.name
+
+        div.contact-info-group
+            div#contact-name.input-group.contact-info
+                span.input-group-addon.contact-info-label Name
+                input.form-control.contact-info-val(type="text" value=contact.name readonly)
+
+            div#contact-email.input-group.contact-info
+                span.input-group-addon.contact-info-label E-mail address
+                input.form-control.contact-info-val(type="text" value=contact.email readonly)
+
+            div#contact-phone.input-group.contact-info
+                span.input-group-addon.contact-info-label Phone number
+                input.form-control.contact-info-val(type="text" value=contact.phoneNum readonly)
+
+        - var formatTimeStamp = function(ts) {
+                - var d = new Date(ts*1000);
+                - return d.toLocaleDateString() + "<br>" + d.toLocaleTimeString();
+        - }
+
+        //- Display recent SMS messages from this contact
+        div.panel.panel-primary.contact-itemlist
+            div.panel-heading.contact-itemlist-heading Recent messages
+            ul.list-group.contact-messages
+                each message in contact.messages
+                    a.list-group-item(href="#" id=message.smsId)
+                        span.contact-itemlist-info!= formatTimeStamp(message.dateTimeSent || message.dateTimeReceived)
+                        span
+                            - var txt = message.textBody.substring(0, 70);
+                            if txt.length < message.textBody.length
+                                - txt += "...";
+                            span.msgtxt= txt
+                            br
+                            i(class=(message.dateTimeSent ? "icon-upright" : "icon-downleft"))
+                            span.recent-subheading Conversation: #{message.groupChatName}
+
+                a.list-group-item.viewall(href="#") View all conversations involving #{contact.name}...
+
+        //- Display recent calls to/from this contact
+        div.panel.panel-primary.contact-itemlist
+            div.panel-heading.contact-itemlist-heading Recent calls
+            ul.list-group.contact-calls
+                - var getCallLength = function(call) {
+                    - if (call.dateTimeAnswered) {
+                        - var d = new Date(0);
+                        - var length = call.dateTimeTerminated - call.dateTimeAnswered;
+                        - d.setSeconds(length);
+                        - return "Duration: " + d.toISOString().substr(11, 8);
+                    - }
+                    - else
+                        - return "Missed call";
+                - }
+            
+                each call in contact.calls
+                    a.list-group-item(href="#")
+                        - var d = new Date(call.dateTimePlaced*1000)
+                        span
+                            if call.pNumFrom
+                                i.icon-incomingcall  
+                            else
+                                i.icon-outgoingcall  
+                            | #{getCallLength(call)}
+                            br
+                            | #{d.toLocaleDateString() + " at " + d.toLocaleTimeString()}
+
+                a.list-group-item.viewall(href="#") View all calls with #{contact.name}...

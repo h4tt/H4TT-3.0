@@ -1,0 +1,25 @@
+//- sms-search-results.jade
+//- Results view for group chat searches
+
+div.search-result-heading SMS conversation search results
+div.list-group.search-result-list
+    //- Use the member's name if available (they're in the contacts list)
+    - var getMemberDisplayName = function(member)  {
+                if member.name
+                    - return member.name;
+                else
+                    - return member.memberPNum;
+    - }
+
+    //- Display information about each conversation
+    each convo in conversations
+        a.list-group-item.search-result(href="#")
+            h4.list-group-item-heading.result-matchable= convo.groupChatName
+            p.result-info-key.hidden= convo.convoId
+
+            //- Construct list of conversation members
+            - var memberStr = getMemberDisplayName(convo.members[0]);
+            - for (var i = 1; i < convo.members.length; ++i)
+                - memberStr += ", " + getMemberDisplayName(convo.members[i]);
+
+            p.list-group-item-text.result-matchable= memberStr

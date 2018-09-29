@@ -1,0 +1,12 @@
+{
+  "name": "phonedb",
+  "version": "1.0.0",
+  "description": "A simple UI on top of an SQL database. Originally made for school, now intentionally vulnerable to SQLi for h4tt-3.0",
+  "dependencies": {
+    "body-parser": "~1.0.0",
+    "express": "~4.0.0",
+    "jade": "~1.3.0",
+    "sqlite3": "^3.1.1"
+  },
+  "author": "Matt Penny"
+}
