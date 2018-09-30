@@ -1,0 +1,14 @@
+{
+  "title": "Not The Bots You Are Looking For",
+  "category": "Web",
+  "description": "TODO: PUT LINK TO CHALLENGE PAGE HERE",
+  "link": "",
+  "points": "50",
+  "flag": "flag{r0b0ts_d0t_txt_1s_n0t_s3cur1ty}",
+  "max_tries": "99",
+  "active": "0",
+  "files": [
+  ],
+  "author": "Dave Petrasovic",
+  "instructions": "Run the node app."
+}

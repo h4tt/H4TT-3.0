@@ -1,0 +1,2 @@
+User-agent: *
+Disallow: /flag-e344db6c4d829be348157715b2658ce5d18a659f/
