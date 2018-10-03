@@ -1,0 +1,14 @@
+{
+    "title": "For the Love of Codd",
+    "category": "Web",
+    "description": "It looks like EvilCorp runs personalized web portals for employees to access the contents of their corporate phones. We've got access to one of them - I wonder if there are any secrets in there.",
+    "link": "",
+    "points": "70",
+    "flag": "flag{th3_nam3s_t4bles_r0bert_tab1e5}",
+    "max_tries": "99",
+    "active": "0",
+    "files": [
+    ],
+    "author": "Matt Penny",
+    "instructions": "The nodejs challenge server needs to be hosted somewhere"
+}

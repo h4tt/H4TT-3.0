@@ -1,0 +1,29 @@
+//- sms-search-results.jade
+//- Results view for group chat searches
+
+div.search-result-heading SMS message results
+div.list-group.search-result-list
+    - var formatTimeStamp = function(ts) {
+        - var d = new Date(ts*1000);
+        - return d.toLocaleDateString() + " " + d.toLocaleTimeString();
+    - }
+
+    //- Use the sender's name if available (they're in the contacts list)
+    - var getFromName = function(sms) {
+        if sms.name
+            - return sms.name;
+        else
+            - return sms.pNumFrom;
+    - }
+
+    //- Display information about each SMS message
+    each sms in messages
+        a.list-group-item.search-result(href="#")
+            - var txt = sms.textBody.substring(0, 60);
+            if txt.length < sms.textBody.length
+                - txt += "...";
+            h4.list-group-item-heading.result-matchable= txt
+
+            p.list-group-item-text Sent by #{getFromName(sms)} in conversation '#{sms.groupChatName}'
+            p.list-group-item-text= formatTimeStamp(sms.dateTimeSent || sms.dateTimeReceived)
+            p.result-info-key.hidden= sms.smsId

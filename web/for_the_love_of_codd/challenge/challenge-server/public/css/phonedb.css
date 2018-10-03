@@ -1,0 +1,89 @@
+#phonedb-navbar {
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+#phonedb-navbar a.navbar-brand {
+    outline: none;
+}
+
+.search-bar * {
+    height: 36px;
+}
+
+.search-bar > .search-input {
+    width: 100%;
+    background-color: #EEE;
+    border-radius: 0;
+    box-shadow: none;
+    outline: none;
+    transition: border-color .1s linear;
+}
+
+.search-bar > .search-input:focus {
+    border-color: #666;
+}
+
+.search-bar > .search-button {
+    background-color: #666;
+    border-radius: 0;
+    box-shadow: none;
+    outline: none;
+    border-color: #666;
+    transition: background-color .1s linear;
+}
+
+.search-bar > .search-button > .btn {
+    color: #FFF;
+    outline: none;
+}
+
+.search-bar > .search-button:hover {
+    background-color: #555;
+}
+
+.search-bar > .search-button:active {
+    background-color: #444;
+}
+
+#search-body {
+    position: absolute;
+    top: 50px;
+    bottom: 0px;
+    width: 100%;
+}
+
+.search-pane {
+    height: 100%;
+    padding: 10px;
+    border: 1px solid #666;
+    overflow: auto;
+}
+
+.search-result-heading {
+    font-size: 1.75em;
+    color: black;
+    padding-bottom: 1em;
+}
+
+#search-results > .search-result-list > .search-result {
+    background-image: none;
+    outline: none;
+}
+
+#search-result-details {
+    display: none;
+}
+
+#search-backbtn {
+    width: 0;
+}
+
+#search-backbtn > .btn {
+    border-radius: 0;
+    outline: none;
+}
+
+#search-backbtn > .btn.hidden {
+    display: none !important;
+}

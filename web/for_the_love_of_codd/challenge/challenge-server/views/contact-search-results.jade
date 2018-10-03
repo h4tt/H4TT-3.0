@@ -1,0 +1,11 @@
+//- contact-search-results.jade
+//- Results view for contact searches
+
+//- Display information about each contact
+div.search-result-heading Contact search results
+div.list-group.search-result-list
+    each contact in contacts
+        a.list-group-item.search-result(href="#")
+            h4.list-group-item-heading.result-matchable= contact.name
+            p.list-group-item-text.result-matchable.result-info-key= contact.phoneNum
+            p.list-group-item-text.result-matchable= contact.email

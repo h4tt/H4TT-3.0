@@ -1,0 +1,45 @@
+//- sms-convo.jade
+//- SMS group chat view
+
+doctype html
+html
+    head
+        link(rel="stylesheet" type="text/css" href="/css/sms.css")
+        script(type="text/javascript" src="/js/sms-convo.js")
+
+    body
+        //- Display each message, its sender, and the time sent
+        //-h3.sms-convo-name= convo.groupChatName
+        each sms in messages
+            - var msgClass;
+            - var arrowType;
+
+            if sms.dateTimeSent
+                - msgClass = "sms-message-outgoing";
+                - arrowType = "sms-message-arrow-right";
+            else
+                - msgClass = "sms-message-incoming";
+                - arrowType = "sms-message-arrow-left";
+
+            - var formatTimeStamp = function(ts) {
+                - var d = new Date(ts*1000);
+
+                //- Can't do multiline vars with Jade
+                - var s = ("0" + (d.getMonth()+1)).slice(-2) + "/";
+                - s += ("0" + d.getDate()).slice(-2) + "/";
+                - s += d.getFullYear() + " " + d.toLocaleTimeString();
+                - return s;
+            - }
+
+            - var sId = (smsId == sms.smsId ? "viewed-sms" : "")
+            div.sms-message-container(class=msgClass id=sId)
+                span.sms-message-arrow(class=arrowType)
+                div.sms-message                
+                    p.sms-message-header
+                        if sms.name
+                            a.sms-message-sender(href="#" title=sms.pNumFrom)= sms.name
+                        else
+                            span.sms-message-sender= sms.pNumFrom
+
+                        span.sms-message-time= formatTimeStamp(sms.dateTimeSent || sms.dateTimeReceived)
+                    p.sms-message-body= sms.textBody
