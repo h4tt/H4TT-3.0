@@ -1,9 +1,9 @@
 {
     "title": "Racing the Beam",
-    "category": "Stego",
+    "category": "Misc",
     "description": "We intercepted a secret file, but how can anything fit in 24K?!",
     "link": "",
-    "points": "20",
+    "points": "40",
     "flag": "flag{n0_t1m3_f0r_g4m3s}",
     "max_tries": "99",
     "active": "0",
