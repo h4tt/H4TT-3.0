@@ -1,0 +1,8 @@
+This challenge needs to be hosted on a remote server. Contestants are to have
+*unprivileged* access.
+
+A docker image has been created to facilitate this while also isolating concurrent
+users from each other. Run `make` followed by `make docker` to create it.
+
+Create an unprivileged user and set its login shell to `run-challenge.sh` to start the
+challenge container for each user who connects.

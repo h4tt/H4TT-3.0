@@ -11,7 +11,9 @@
 [Split The Atom | 50](https://github.com/h4tt/H4TT-3.0/tree/master/crypto/split_the_atom)
 
 ## pwn
-[Talk To Me | 60](https://github.com/h4tt/H4TT-3.0/tree/master/pwn/talk_to_me)
+[Talk To Me (Part 1) | 60](https://github.com/h4tt/H4TT-3.0/tree/master/pwn/talk_to_me)
+
+[You Can Drown in Just 64 Bytes of Data (Part 2) | 65](https://github.com/h4tt/H4TT-3.0/tree/master/pwn/you_can_drown_in_just_64_bytes_of_data)
 
 ## recon
 [And Then it Went Viral | 40](https://github.com/h4tt/H4TT-3.0/tree/master/recon/it_went_viral)
