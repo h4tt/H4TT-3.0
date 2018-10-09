@@ -1,0 +1,13 @@
+{
+    "title": "You Can Drown in Just 64 Bytes of Data (Part 2)",
+    "category": "Pwn",
+    "description": "The Evilcorp CEO is onto our trick from last time. See if you can extract more secrets.",
+    "link": "",
+    "points": "65",
+    "flag": "flag{g0nna_n33d_4_p1ung3r}",
+    "max_tries": "99",
+    "active": "0",
+    "files": [
+    ],
+    "author": "Matt Penny"
+}
