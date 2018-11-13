@@ -10,6 +10,8 @@
 
 [Split The Atom | 50](https://github.com/h4tt/H4TT-3.0/tree/master/crypto/split_the_atom)
 
+[Always Wear Block Pads | 150](https://github.com/h4tt/H4TT-3.0/tree/master/crypto/always_wear_block_pads)
+
 ## misc
 [Racing the Beam | 40](https://github.com/h4tt/H4TT-3.0/tree/master/misc/racing_the_beam)
 

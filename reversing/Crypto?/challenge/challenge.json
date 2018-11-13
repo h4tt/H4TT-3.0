@@ -1,8 +1,8 @@
 {
-    "title": "Maybe Crypto",
-    "category": "rev",
+    "title": "Crypto?",
+    "category": "reversing",
     "description": "The flag is somewhere in the binary. Can you find it?",
-    "link": "",
+    "link": "CONFUSED",
     "points": "50",
     "flag": "flag{r3v_0r_crypt0}",
     "max_tries": "99",
