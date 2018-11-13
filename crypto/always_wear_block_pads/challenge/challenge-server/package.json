@@ -1,0 +1,11 @@
+{
+  "name": "h4tt-padding-oracle",
+  "version": "1.0.0",
+  "description": "A padding oracle for h4tt-3.0",
+  "main": "challenge-server.js",
+  "dependencies": {
+    "express": "^4.16.0"
+  },
+  "author": "Matt Penny",
+  "license": "MIT"
+}

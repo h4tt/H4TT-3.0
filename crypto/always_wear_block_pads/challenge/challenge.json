@@ -1,0 +1,14 @@
+{
+    "title": "Always Wear Block Pads",
+    "category": "Crypto",
+    "description": "We obtained access to EvilCorp's debug tools for product keys. See if you can decipher their internal representation.",
+    "link": "",
+    "points": "150",
+    "flag": "flag{s3rge_wou1d_b3_pr0ud}",
+    "max_tries": "99",
+    "active": "0",
+    "files": [
+    ],
+    "author": "Matt Penny",
+    "instructions": "The nodejs challenge server needs to be hosted somewhere"
+}

@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Debug license key tools</title>
+        <script type="text/javascript" src="js/keygen.js"></script>
+        <style>
+            #keyError {
+                display: none;
+            }
+            .error {
+                color: red;
+            }
+            .success {
+                color: green;
+            }
+            input[type="text"] {
+                min-width: 700px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>EvilCorp debug license key tools</h2>
+        <form>
+            <fieldset>
+                <legend>License key generator</legend>
+                <label for="licenseKey">License key (hex):</label>
+                <input id="generatedKey" name="licenseKey" type="text" readonly>
+
+                <br><br>
+                <button type="button" id="genKeyBtn">Generate debug key</button>
+                <input type="reset">
+            </fieldset>
+        </form>
+        <form>
+            <fieldset>
+                <legend>License key verifier</legend>
+                <label for="licenseKey">License key (hex):</label>
+                <input id="enteredKey" name="licenseKey" type="text">
+                <span id="keyError"></span>
+
+                <br><br>
+                <button type="button" id="verifyKeyBtn">Verify key</button>
+                <input id="keyVerifyResetBtn" type="reset">
+            </fieldset>
+        </form>
+    </body>
+</html>
