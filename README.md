@@ -24,7 +24,7 @@
 [And Then it Went Viral | 40](https://github.com/h4tt/H4TT-3.0/tree/master/recon/it_went_viral)
 
 ## rev
-[Crypto? | 50](https://github.com/h4tt/H4TT-3.0/tree/master/rev/maybe_crypto)
+[maybe_crypto | 50](https://github.com/h4tt/H4TT-3.0/tree/master/rev/maybe_crypto)
 
 ## stego
 [Eye of the Parser | 120](https://github.com/h4tt/H4TT-3.0/tree/master/stego/eye_of_the_parser)
