@@ -24,7 +24,7 @@
 [And Then it Went Viral | 40](https://github.com/h4tt/H4TT-3.0/tree/master/recon/it_went_viral)
 
 ## rev
-[crristmas | 40](https://github.com/h4tt/H4TT-3.0/tree/master/rev/christmas)
+[Christmas | 40](https://github.com/h4tt/H4TT-3.0/tree/master/rev/christmas)
 
 [Maybe Crypto | 50](https://github.com/h4tt/H4TT-3.0/tree/master/rev/maybe_crypto)
 
