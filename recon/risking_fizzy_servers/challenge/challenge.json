@@ -1,0 +1,14 @@
+{
+    "title": "Risking Fizzy Servers",
+    "category": "recon",
+    "description": "I'm waiting for a bus right now! Can you figure out what city I'm in?",
+    "link": "",
+    "points": "40",
+    "flag": "flag{oslo}",
+    "max_tries": "99",
+    "active": "0",
+    "files": [
+        ""
+    ],
+    "author": "Forest Anderson"
+  }
