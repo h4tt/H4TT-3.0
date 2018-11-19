@@ -1,0 +1,3 @@
+The 3 word title of this challenge can be used as a location on map.what3words.com, as risking.fizzy.servers.
+
+flag{oslo}
