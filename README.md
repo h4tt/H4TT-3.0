@@ -30,6 +30,8 @@
 
 [Maybe Crypto | 50](https://github.com/h4tt/H4TT-3.0/tree/master/rev/maybe_crypto)
 
+[Moving Parts | 60](https://github.com/h4tt/H4TT-3.0/tree/master/rev/moving_parts)
+
 ## stego
 [Eye of the Parser | 120](https://github.com/h4tt/H4TT-3.0/tree/master/stego/eye_of_the_parser)
 
