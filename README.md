@@ -32,7 +32,7 @@
 
 [Moving Parts | 60](https://github.com/h4tt/H4TT-3.0/tree/master/rev/moving_parts)
 
-['Military Grade' Encryption | 150](https://github.com/h4tt/H4TT-3.0/tree/master/rev/military_grade_encryption)
+['Military Grade' Encryption | 100](https://github.com/h4tt/H4TT-3.0/tree/master/rev/military_grade_encryption)
 
 ## stego
 [Eye of the Parser | 120](https://github.com/h4tt/H4TT-3.0/tree/master/stego/eye_of_the_parser)
