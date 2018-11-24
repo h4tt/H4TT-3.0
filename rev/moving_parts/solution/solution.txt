@@ -6,7 +6,7 @@ alright at reversing, they become easy)
 Solution:
 Instead of having one single thread, I now have four. This means that you can't just set a breakpoint and 
 check the value on the stack. In addition, the string is on the heap anyway. The solution is to go find 
-the three functions executed by the threads, and moticing they're placing a string somewhere in jumbled order
+the three functions executed by the threads, and noticing they're placing a string somewhere in jumbled order
 and clearing it, so even if you were to observe the memory buffer, you'll find that it's never fully formed.
 Reassembling the pieces of the string, you get the flag:
 
