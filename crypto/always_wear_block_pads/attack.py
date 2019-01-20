@@ -15,7 +15,7 @@ def has_valid_padding(ciphertext, iv):
 	return res['error'] == 'Invalid license key'
 
 '''
-# Padding oracle
+# Padding oracle (offline demo)
 def has_valid_padding(ciphertext, iv):
 	key = 'this_isnt_a_flag'
 	cipher = AES.new(key, AES.MODE_CBC, iv)
@@ -112,7 +112,7 @@ def decrypt(ciphertext, iv='\0'*AES_BLOCK_SIZE):
 			blk = iv
 			iv = blks.pop()
 		else:
-			return plaintext
+			return plaintext[:-ord(plaintext[-1])]  # Strip padding
 
 def encrypt(plaintext):
 	plaintext = pad(plaintext)
@@ -133,13 +133,13 @@ def encrypt(plaintext):
 
 
 '''
-# Decryption
+# Decryption (offline demo)
 with open('ciphertext.bin', 'rb') as f:
 	print 'Plaintext:', decrypt(f.read())
 '''
 
 '''
-# Encryption
+# Encryption (offline demo)
 with open('plaintext.txt', 'rb') as f:
 	plaintext = f.read()
 	print 'Original plaintext:', plaintext
@@ -172,11 +172,10 @@ if __name__ == '__main__':
 		if args.iv_and_ciphertext:
 			iv_and_ciphertext = args.iv_and_ciphertext.decode('hex')
 			iv, ciphertext = iv_and_ciphertext[:AES_BLOCK_SIZE], iv_and_ciphertext[AES_BLOCK_SIZE:]
-		else:
+		elif args.iv and args.ciphertext:
 			iv = args.iv.decode('hex')
 			ciphertext = args.ciphertext.decode('hex')
-
-		if not iv or not ciphertext:
+		else:
 			print 'IV and ciphertext must be specified'
 			dec_parser.print_help()
 			sys.exit(1)

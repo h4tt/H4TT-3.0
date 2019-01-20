@@ -1,1 +1,1 @@
-flag{s3rge_wou1d_b3_pr0ud}
+secret=flag{s3rge_wou1d_b3_pr0ud};user=_evilcorp-debug

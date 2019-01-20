@@ -6,7 +6,10 @@ const port = process.env.PORT || 1337;
 const app = express();
 
 const AES_KEY = crypto.randomBytes(32);
+
 const FLAG = 'flag{s3rge_wou1d_b3_pr0ud}';
+const FLAG2 = 'flag{wh3r3_4re_th3_ch1ptune5}';
+const DEBUG_KEY = `secret=${FLAG};user=_evilcorp-debug`;
 
 app.use(express.static(path.join(__dirname, 'static')));
 
@@ -18,7 +21,7 @@ app.get('/key', function(req, res) {
         }
 
         let cipher = crypto.createCipheriv('aes-256-cbc', AES_KEY, iv);
-        let encrypted = iv.toString('hex') + cipher.update(FLAG, 'utf8', 'hex') + cipher.final('hex');
+        let encrypted = iv.toString('hex') + cipher.update(DEBUG_KEY, 'utf8', 'hex') + cipher.final('hex');
         res.send({
             key: encrypted
         });
@@ -35,7 +38,7 @@ app.get('/keyverify', function(req, res) {
     }
 
     try {
-        encrypted = new Buffer(encrypted, "hex");
+        encrypted = Buffer.from(encrypted, "hex");
     } catch (ex) {
         return res.send({
             error: ex.message
@@ -64,12 +67,20 @@ app.get('/keyverify', function(req, res) {
         err = `Malformed license key (${ex.message})`;
     }
 
-    if (decrypted != FLAG) {
+    // Unpack license key
+    let license_properties = {};
+    decrypted.split(';').forEach(function(prop) {
+        let [name, value] = prop.split('=');
+        license_properties[name] = value;
+    });
+
+    if (license_properties.secret != FLAG) {
         err = err || 'Invalid license key';
     }
 
     res.send({
-        error: err
+        error: err,
+        msg: license_properties.user == 'evilcorp' ? FLAG2 : null
     });
 });
 
