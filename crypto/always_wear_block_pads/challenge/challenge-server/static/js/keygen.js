@@ -47,10 +47,9 @@ document.addEventListener('DOMContentLoaded', function() {
 		hideKeyError();
 
 		getJSON('/keyverify?key=' + key, function(err, res) {
-			if (err) {
-				showKeyError(err, 'error');
-			} else if (res.error) {
-				showKeyError(res.error, 'error');
+			var e = err || res.error;
+			if (e) {
+				showKeyError(e, 'error');
 			} else {
 				var validMsg = 'Key is valid';
 				if (res.msg) {

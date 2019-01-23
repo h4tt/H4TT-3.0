@@ -10,7 +10,9 @@
 
 [Split The Atom | 50](https://github.com/h4tt/H4TT-3.0/tree/master/crypto/split_the_atom)
 
-[Always Wear Block Pads | 150](https://github.com/h4tt/H4TT-3.0/tree/master/crypto/always_wear_block_pads)
+[Always Wear Block Pads (Part 1) | 150](https://github.com/h4tt/H4TT-3.0/tree/master/crypto/always_wear_block_pads)
+
+[License to Crack (Part 2) | 175](https://github.com/h4tt/H4TT-3.0/tree/master/crypto/license_to_crack)
 
 ## misc
 [Racing the Beam | 40](https://github.com/h4tt/H4TT-3.0/tree/master/misc/racing_the_beam)
