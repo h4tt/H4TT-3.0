@@ -14,6 +14,9 @@
 
 [License to Crack (Part 2) | 175](https://github.com/h4tt/H4TT-3.0/tree/master/crypto/license_to_crack)
 
+## forensics
+[DOCX | 40](https://github.com/h4tt/H4TT-3.0/tree/master/forensics/docx)
+
 ## misc
 [Racing the Beam | 40](https://github.com/h4tt/H4TT-3.0/tree/master/misc/racing_the_beam)
 
