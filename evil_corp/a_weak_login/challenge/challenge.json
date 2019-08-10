@@ -1,0 +1,15 @@
+{
+    "title": "A Weak Login",
+    "category": "evil_corp",
+    "description": "Looks like the leaked memo might reveal some security vulnerabilities on the login form. See if you can't gain access.\nNOTE: This challenge requires you have completed the previous challenge 'An Interesting Memo'.",
+    "hint": "You can GET an HTTP page but also XXXX an HTTP page.",
+    "link": "",
+    "points": "50",
+    "flag": "flag{wh0_n33d5_l061n_cr3d5}",
+    "max_tries": "99",
+    "active": "0",
+    "files": [
+        ""
+    ],
+    "author": "Francisco Trindade"
+}

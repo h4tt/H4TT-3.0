@@ -1,0 +1,8 @@
+<h1>Home Directory Listing</h1>
+<ul>
+    {{# each homeFiles }}
+        <li>
+            <a href="/evilcorp-home?file={{this}}">{{this}}</a>
+        </li>
+    {{/each}}
+</ul>

@@ -1,0 +1,119 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("/imgs/matrix.png");
+    font-size: 1.3em;
+    color: rgb(236,235,232);
+    font-family: "Share Tech Mono", monospace;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: rgb(182, 232, 86);
+    text-shadow: rgba(0,0,0,0.1) 0px 1px 1px, rgba(96,136,18,0.1) 0px 0px 5px, rgba(96,136,18,0.1) 0px 0px 10px;
+}
+
+a {
+    color: rgb(99,192,245);
+    text-shadow: rgba(0,73,142,0.5) 0px 0px 5px;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+pre {
+    background: black;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 10px;
+    border-radius: 2px;
+    display: block;
+    white-space: pre-wrap;
+}
+
+ul li {
+    list-style-image: url("/imgs/bullet.png");
+}
+
+li {
+    line-height: 1.4;
+}
+
+hr {
+    border-top-color: initial;
+    border-right-color: initial;
+    border-left-color: initial;
+    border-bottom-color: rgb(112,159,21);
+    color: rgb(182,232,86);
+    hight: 0;
+    border: 0;
+    border-bottom: 1px dashed #b5e853;
+}
+
+.content {
+    grid-column: 2;
+    justify-self: center;
+}
+
+.header-pre {
+    background: rgba(0,0,0,0);
+    border: none;
+    color: rgb(182, 232, 86);
+    text-shadow: rgba(0,0,0,0.1) 0px 1px 1px, rgba(96,136,18,0.1) 0px 0px 5px, rgba(96,136,18,0.1) 0px 0px 10px;
+    font-size: 1.15em;
+}
+
+.footer {
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+}
+
+.login-inputs {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px dashed #b5e853;
+    font-size: 1.15em;
+    color: rgb(236,235,232);
+    font-family: "Share Tech Mono", monospace;
+}
+
+.login-button {
+    font-size: 1.05em;
+    color: rgb(182, 232, 86);
+    background: black;
+    border-color: rgb(182,232,86);
+    border-width: 2px;
+    border-radius: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+    font-size: 1.05em;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.main-content {
+    min-height: calc(100% - 50px);
+    margin-bottom: 0;
+    padding-bottom: 0;
+}

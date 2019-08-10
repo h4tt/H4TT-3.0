@@ -1,0 +1,16 @@
+{
+    "title": "An Interesting Memo",
+    "category": "evil_corp",
+    "description": "Looks like the Evil Corp mole has given us an encrypted file, see if you can't decrypt it.\nNOTE: This challenge requires the completion of 'Welcome to Evil Corp'",
+    "hint": "Ever built a dictionary?",
+    "link": "",
+    "points": "45",
+    "flag": "flag{c4p741n_crunch}",
+    "max_tries": "99",
+    "active": "0",
+    "files": [
+        ""
+
+    ],
+    "author": "Francisco Trindade"
+}
