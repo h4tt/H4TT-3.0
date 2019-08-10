@@ -1,0 +1,15 @@
+{
+    "title": "What Bash?",
+    "category": "evil_corp",
+    "description": "We need to see what's in /tmp. Try and gain access to those files.\nNOTE: You will need to have completed 'Up and Down We Go' before attempting this challenge.",
+    "hint": "PATH is a cool variable",
+    "link": "",
+    "points": "70",
+    "flag": "flag{rb45h_c4n7_570p_m3}",
+    "max_tries": "99",
+    "active": "0",
+    "files": [
+        ""
+    ],
+    "author": "Francisco Trindade"
+}

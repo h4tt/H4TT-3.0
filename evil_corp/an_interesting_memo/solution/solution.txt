@@ -1,0 +1,6 @@
+Downloading the file linked in the solution of the previous challenge "Welcome to Evil Corp". The file is an encrypted zip file.
+
+The solution is to either use `crunch` or another script to generate every possibly permutation of 5 lower case alphanumeric characters and pre-pending them all with the 5 characters shown in the note. Then run a dictionary attack either using John or pcrackzip against the zip file.
+The password reveals itself to be: v2vkidi2ie
+
+Flag: flag{c4p741n_crunch}

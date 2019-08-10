@@ -14,6 +14,19 @@
 
 [License to Crack (Part 2) | 175](https://github.com/h4tt/H4TT-3.0/tree/master/crypto/license_to_crack)
 
+## evil_corp
+[Welcome to Evil Corp | 20](https://github.com/h4tt/H4TT-3.0/tree/master/evil_corp/welcome_to_evil_corp)
+
+[An Interesting Memo | 45](https://github.com/h4tt/H4TT-3.0/tree/master/evil_corp/an_interesting_memo)
+
+[A Weak Login | 50](https://github.com/h4tt/H4TT-3.0/tree/master/evil_corp/a_weak_login)
+
+[Up and Down We Go | 50](https://github.com/h4tt/H4TT-3.0/tree/master/evil_corp/up_and_down)
+
+[What Bash? | 70](https://github.com/h4tt/H4TT-3.0/tree/master/evil_corp/what_bash)
+
+[Root of all Evil | 100](https://github.com/h4tt/H4TT-3.0/tree/master/evil_corp/root_of_all_evil)
+
 ## forensics
 [DOCX | 40](https://github.com/h4tt/H4TT-3.0/tree/master/forensics/docx)
 

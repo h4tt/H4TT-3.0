@@ -1,0 +1,15 @@
+{
+    "title": "Root of all Evil",
+    "category": "evil_corp",
+    "description": "The mole seems to have given us a way to get the last bit of info in /root. See if you can't get access to it.\nNOTE: You will have needed to accomplish the previous challenge 'What Bash' in order to accomplish this challenge.",
+    "hint": "man sudo",
+    "link": "",
+    "points": "100",
+    "flag": "flag{5ud0_15_p0w3rful}",
+    "max_tries": "99",
+    "active": "0",
+    "files": [
+        ""
+    ],
+    "author": "Francisco Trindade"
+}

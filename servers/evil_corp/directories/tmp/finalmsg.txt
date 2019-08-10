@@ -1,0 +1,9 @@
+Looks like this is the end for me. I've barricaded myself in the server room here at Evil Corp. It's only a matter of time. I was able to dump the damning information into /root/flag.txt. But I know you can't access it.
+
+I think I was able to give you something to help get it, I really hope you can.
+
+Best of luck,
+
+A
+
+flag{rb45h_c4n7_570p_m3}

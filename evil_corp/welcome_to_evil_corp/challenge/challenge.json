@@ -1,0 +1,15 @@
+{
+    "title": "Welcome to Evil Corp",
+    "category": "evil_corp",
+    "description": "You've received a link to Evil Corps website through an anonymous email. Try and see what you can find.",
+    "link": "<link to website running in docker container>",
+    "hint": "01001101 01110010 00100000 01010010 01101111 01100010 01101111 01110100 01101111",
+    "points": "20",
+    "flag": "flag{r0b075_m155_fun_d1r5}",
+    "max_tries": "99",
+    "active": "0",
+    "files": [
+        ""
+    ],
+    "author": "Francisco Trindade"
+}
