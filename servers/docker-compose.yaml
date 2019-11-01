@@ -1,0 +1,80 @@
+version: '3'
+services:
+  # Nginx
+  nginx-ssl-proxy:
+    build:
+      context: nginx/
+      dockerfile: Dockerfile
+    restart: always
+    environment:
+      SERVERNAME: scoreboard.h4tt.ca
+      EXTRANAMES: evilcorp.h4tt.ca
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - "/etc/letsencrypt"
+
+  # CTFd
+  ctfd:
+    image: ctfd/ctfd
+    user: root
+    restart: always
+    ports:
+      - "8000:8000"
+    environment:
+      - UPLOAD_FOLDER=/var/uploads
+      - DATABASE_URL=mysql+pymysql://root:ctfd@db/ctfd
+      - REDIS_URL=redis://cache:6379
+      - WORKERS=1
+      - LOG_FOLDER=/var/log/CTFd
+      - ACCESS_LOG=-
+      - ERROR_LOG=-
+    volumes:
+      - .data/CTFd/logs:/var/log/CTFd
+      - .data/CTFd/uploads:/var/uploads
+      - .:/opt/CTFd:ro
+    depends_on:
+      - db
+    networks:
+        default:
+        internal:
+
+  db:
+    image: mariadb:10.4
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=ctfd
+      - MYSQL_USER=ctfd
+      - MYSQL_PASSWORD=ctfd
+      - MYSQL_DATABASE=ctfd
+    volumes:
+      - .data/mysql:/var/lib/mysql
+    networks:
+        internal:
+    # This command is required to set important mariadb defaults
+    command: [mysqld, --character-set-server=utf8mb4, --collation-server=utf8mb4_unicode_ci, --wait_timeout=28800, --log-warnings=0]
+
+  cache:
+    image: redis:4
+    restart: always
+    volumes:
+    - .data/redis:/data
+    networks:
+        internal:
+
+  talk-to-me:
+    build:
+      dockerfile: talk_to_me/Dockerfile
+      context: ../pwn/talk_to_me/challenge/
+
+networks:
+    default:
+    internal:
+        internal: true
+
+networks:
+  default:
+    external:
+      name: ctfd_default
+        
