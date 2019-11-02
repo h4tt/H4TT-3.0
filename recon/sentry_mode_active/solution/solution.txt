@@ -1,5 +1,5 @@
 reviewing the dashcam footage from the Tesla, you should be able to determine
-where the Tesla is parked. Walking over to it and looking in the window will,
+where the Tesla is parked. Walking over to it and looking in the window,
 you will see the flag
 
 FLAG{SHORT_SQUEEZE}

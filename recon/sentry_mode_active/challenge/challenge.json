@@ -1,9 +1,9 @@
 {
     "title": "Sentry Mode Active",
     "category": "recon",
-    "description": "",
+    "description": "The following video files were recovered from the storage device in a Tesla Model 3",
     "link": "",
-    "points": "40",
+    "points": "50",
     "flag": "FLAG{SHORT_SQUEEZE}",
     "max_tries": "99",
     "active": "0",
