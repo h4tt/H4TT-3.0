@@ -43,9 +43,11 @@
 [You Can Drown in Just 64 Bytes of Data (Part 2) | 65](https://github.com/h4tt/H4TT-3.0/tree/master/pwn/you_can_drown_in_just_64_bytes_of_data)
 
 ## recon
+[Fly Home Kitty! | 35](https://github.com/h4tt/H4TT-3.0/tree/master/recon/fly_home_kitty)
+
 [And Then it Went Viral | 40](https://github.com/h4tt/H4TT-3.0/tree/master/recon/it_went_viral)
 
-[Risking Fizzy Servers | 40](https://github.com/h4tt/H4TT-3.0/tree/master/recon/risking_fizzy_servers)
+[Risking Fizzy Servers | 50](https://github.com/h4tt/H4TT-3.0/tree/master/recon/risking_fizzy_servers)
 
 ## rev
 [Christmas | 40](https://github.com/h4tt/H4TT-3.0/tree/master/rev/christmas)
