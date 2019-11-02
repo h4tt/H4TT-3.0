@@ -1,4 +1,4 @@
-![sreencast](poster.PNG)
+![sreencast](poster.jpg)
 
 # Hack All The Things Round 3.0
 ## crypto
