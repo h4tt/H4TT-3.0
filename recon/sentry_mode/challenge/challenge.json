@@ -1,0 +1,14 @@
+{
+    "title": "Sentry Mode Active",
+    "category": "recon",
+    "description": "",
+    "link": "",
+    "points": "40",
+    "flag": "FLAG{SHORT_SQUEEZE}",
+    "max_tries": "99",
+    "active": "0",
+    "files": [
+        ""
+    ],
+    "author": "Dave Petrasovic"
+  }
