@@ -10,6 +10,8 @@
 
 [Split The Atom | 50](https://github.com/h4tt/H4TT-3.0/tree/master/crypto/split_the_atom)
 
+[Hog | 70](https://github.com/h4tt/H4TT-3.0/tree/master/crypto/hog)
+
 [Always Wear Block Pads (Part 1) | 150](https://github.com/h4tt/H4TT-3.0/tree/master/crypto/always_wear_block_pads)
 
 [License to Crack (Part 2) | 175](https://github.com/h4tt/H4TT-3.0/tree/master/crypto/license_to_crack)
