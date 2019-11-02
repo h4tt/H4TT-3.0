@@ -4,7 +4,7 @@ import json
 H4TT_VERSION = "3.0"
 
 jsons = []
-output = "![sreencast](poster.jpg)\n\n# Hack All The Things Round %s\n" % H4TT_VERSION
+output = f"![sreencast](poster.jpg)\n\n# Hack All The Things Round {H4TT_VERSION}\n"
 
 def CleanFolders():
     filenames = os.listdir (".")
