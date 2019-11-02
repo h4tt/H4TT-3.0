@@ -8,6 +8,8 @@
 
 [Boxed Salad | 50](https://github.com/h4tt/H4TT-3.0/tree/master/crypto/boxed_salad)
 
+[Hog | 50](https://github.com/h4tt/H4TT-3.0/tree/master/crypto/hog)
+
 [Split The Atom | 50](https://github.com/h4tt/H4TT-3.0/tree/master/crypto/split_the_atom)
 
 [Always Wear Block Pads (Part 1) | 150](https://github.com/h4tt/H4TT-3.0/tree/master/crypto/always_wear_block_pads)
