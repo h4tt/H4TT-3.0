@@ -3,7 +3,7 @@
     "category": "recon",
     "description": "I'm waiting for a bus right now! Can you figure out what city I'm in?\nThe flag is in the form flag{CITY_UPPER_CASE}",
     "link": "",
-    "points": "40",
+    "points": "50",
     "flag": "flag{OSLO}",
     "max_tries": "99",
     "active": "0",
