@@ -1,0 +1,15 @@
+{
+    "title": "'Military Grade' Encryption",
+    "category": "rev",
+    "description": "I lost my flag! Can you help me find it?",
+    "link": "",
+    "points": "100",
+    "flag": "flag{0b5cur1ty_1s_n0t_3ncrypt10n}",
+    "max_tries": "99",
+    "active": "0",
+    "files": [
+        "readme.txt",
+        "military_encryption"
+    ],
+    "author": "Sean Maher"
+  }
