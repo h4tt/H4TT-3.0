@@ -30,6 +30,8 @@
 ## forensics
 [DOCX | 40](https://github.com/h4tt/H4TT-3.0/tree/master/forensics/docx)
 
+[Nickleback | 40](https://github.com/h4tt/H4TT-3.0/tree/master/forensics/nickelback)
+
 ## misc
 [Racing the Beam | 40](https://github.com/h4tt/H4TT-3.0/tree/master/misc/racing_the_beam)
 
