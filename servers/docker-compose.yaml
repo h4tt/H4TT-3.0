@@ -1,5 +1,24 @@
 version: '3'
 services:
+
+  # Port list
+  #
+  # - Scoreboard -
+  #
+  # 80    Nginx
+  # 443   Nginx
+  # 8000  CTFd
+  #
+  # - Challenges -
+  #
+  # 9000  
+  # 9001  
+  # 9002  
+  # 9003  
+  # 9004  
+  # 9005  
+
+
   # Nginx
   nginx-ssl-proxy:
     build:
@@ -14,6 +33,8 @@ services:
       - "443:443"
     volumes:
       - "/etc/letsencrypt"
+    networks:
+      default:
 
   # CTFd
   ctfd:
@@ -37,8 +58,8 @@ services:
     depends_on:
       - db
     networks:
-        default:
-        internal:
+      default:
+      ctfd:
 
   db:
     image: mariadb:10.4
@@ -50,10 +71,10 @@ services:
       - MYSQL_DATABASE=ctfd
     volumes:
       - .data/mysql:/var/lib/mysql
-    networks:
-        internal:
     # This command is required to set important mariadb defaults
     command: [mysqld, --character-set-server=utf8mb4, --collation-server=utf8mb4_unicode_ci, --wait_timeout=28800, --log-warnings=0]
+    networks:
+      ctfd:
 
   cache:
     image: redis:4
@@ -61,20 +82,26 @@ services:
     volumes:
     - .data/redis:/data
     networks:
-        internal:
+      ctfd:
 
-  talk-to-me:
+  # Challenges
+  talk-to-me-launcher:
     build:
-      dockerfile: talk_to_me/Dockerfile
-      context: ../pwn/talk_to_me/challenge/
+      dockerfile: servers/talk_to_me/Dockerfile
+      context: ../
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"
+    ports:
+      - "9000:22"
+    
+  talk-to-me-challenge:
+    build:
+      dockerfile: Dockerfile
+      context: ../pwn/talk_to_me/challenge
+    entrypoint: "bash -c"
+    command: "exit 0"
 
 networks:
     default:
-    internal:
-        internal: true
-
-networks:
-  default:
-    external:
-      name: ctfd_default
-        
+    ctfd:
+      internal: true
