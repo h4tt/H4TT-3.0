@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.engine("handlebars", exphbs());
 app.set("view engine", "handlebars");
 
-const masterRouter = require(path.join(__dirname, "routes", "master"));
+const masterRouter = require(path.join(__dirname, "routes", "master")).router;
 
 app.use("/", masterRouter);
 

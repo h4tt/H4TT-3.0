@@ -1,10 +1,10 @@
 {
-    "title": "An Interesting Memo",
+    "title": "EC 2: An Interesting Memo",
     "category": "evil_corp",
-    "description": "Looks like the Evil Corp mole has given us an encrypted file, see if you can't decrypt it.\nNOTE: This challenge requires the completion of 'Welcome to Evil Corp'",
+    "description": "Looks like the Evil Corp mole has given us an encrypted file, see if you can't decrypt it.",
     "hint": "Ever built a dictionary?",
-    "link": "",
-    "points": "45",
+    "link": "evilcorp.h4tt.ca",
+    "points": "40",
     "flag": "flag{c4p741n_crunch}",
     "max_tries": "99",
     "active": "0",
@@ -12,5 +12,6 @@
         ""
 
     ],
+    "required": "welcome_to_evil_corp",
     "author": "Francisco Trindade"
 }

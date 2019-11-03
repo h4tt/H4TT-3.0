@@ -1,16 +1,17 @@
 
 {
-    "title": "Up and Down We Go",
+    "title": "EC 4: Up and Down We Go",
     "category": "evil_corp",
-    "description": "Looks like some file is readable that shouldn't be. Go find it.\nNote in order to attempt this challenge you need to have completed the previous challenge 'A Weak Login'",
+    "description": "Looks like some file is readable that shouldn't be. Go find it.",
     "hint": "What file is similar to /etc/passwd",
-    "link": "",
-    "points": "50",
+    "link": "evilcorp.h4tt.ca",
+    "points": "60",
     "flag": "flag{f0ll0w_7h3_r4bb17_n30}",
     "max_tries": "99",
     "active": "0",
     "files": [
         ""
     ],
+    "required": "a_weak_login",
     "author": "Francisco Trindade"
 }
