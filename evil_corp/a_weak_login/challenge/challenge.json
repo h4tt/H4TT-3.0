@@ -1,9 +1,9 @@
 {
-    "title": "A Weak Login",
+    "title": "EC 3: A Weak Login",
     "category": "evil_corp",
-    "description": "Looks like the leaked memo might reveal some security vulnerabilities on the login form. See if you can't gain access.\nNOTE: This challenge requires you have completed the previous challenge 'An Interesting Memo'.",
+    "description": "Looks like the leaked memo might reveal some security vulnerabilities on the login form. See if you can't gain access.",
     "hint": "You can GET an HTTP page but also XXXX an HTTP page.",
-    "link": "",
+    "link": "evilcorp.h4tt.ca",
     "points": "50",
     "flag": "flag{wh0_n33d5_l061n_cr3d5}",
     "max_tries": "99",
@@ -11,5 +11,6 @@
     "files": [
         ""
     ],
+    "required": "an_interesting_memo",
     "author": "Francisco Trindade"
 }
