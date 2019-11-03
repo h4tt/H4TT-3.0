@@ -1,3 +1,1 @@
-- Do Evil stuff
-- Change the read permissions on some files that were backed up, read perms were given to all users rather than same perms as the original file. They should exist in the same directories as their original files
-- (fill this out more)
+Some proper read permissions are not set correctly. Need to get around to securing the more sensitive files. Need to fix that up asap, probably going to put Morpheus on this one

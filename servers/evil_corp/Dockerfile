@@ -46,14 +46,14 @@ RUN useradd -s /bin/rbash --create-home ${VULN_USER}; \
 # Webapp directories
 # copy them over and ensure only www-data and root can access
 COPY app/ /var/www
+COPY zip-file /var/www/zip-file
 RUN chown -R root:www-data /var/www; \
     chmod -R 770 /var/www
 
 # /etc directories
-# Ensure vuln user can run hexdump as sudo and /etc/shadow.bak is readable by all users
+# Ensure vuln user can run hexdump as sudo and /etc/shadow is readable by all users
 COPY ${SERVER_FILES}/etc/* /etc/
-RUN cp /etc/shadow /etc/shadow.bak; \
-    chmod +r /etc/shadow.bak; \
+RUN chmod +r/etc/shadow; \
     echo "${VULN_USER} ALL=(ALL) /usr/bin/hexdump" >> /etc/sudoers
 
 # Vulnerable user home directory
@@ -63,7 +63,7 @@ RUN chown root:root /home/${VULN_USER}
 
 
 # /tmp and /root directories
-# Ensure /tmp can be read by not edited by the vuln user
+# Ensure /tmp can be read and not edited by the vuln user
 COPY ${SERVER_FILES}/tmp/* /tmp/
 COPY ${SERVER_FILES}/root/* /root/
 RUN chmod 755 /tmp

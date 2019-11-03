@@ -3,3 +3,4 @@ node_modules
 */.eslintrc*
 */package-lock.json
 TOP-SECRET.zip
+build-and-run.sh
