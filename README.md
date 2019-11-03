@@ -30,9 +30,11 @@
 [Root of all Evil | 100](https://github.com/h4tt/H4TT-3.0/tree/master/evil_corp/root_of_all_evil)
 
 ## forensics
-[DOCX | 40](https://github.com/h4tt/H4TT-3.0/tree/master/forensics/docx)
+[Nickleback | 35](https://github.com/h4tt/H4TT-3.0/tree/master/forensics/nickelback)
 
-[Nickleback | 40](https://github.com/h4tt/H4TT-3.0/tree/master/forensics/nickelback)
+[A Good View | 40](https://github.com/h4tt/H4TT-3.0/tree/master/forensics/good_view)
+
+[DOCX | 45](https://github.com/h4tt/H4TT-3.0/tree/master/forensics/docx)
 
 ## misc
 [Racing the Beam | 40](https://github.com/h4tt/H4TT-3.0/tree/master/misc/racing_the_beam)
