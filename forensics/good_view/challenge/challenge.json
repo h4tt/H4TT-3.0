@@ -1,0 +1,14 @@
+{
+    "title": "A Good View",
+    "category": "forensics",
+    "description": "What a sublime day!",
+    "link": "",
+    "points": "40",
+    "flag": "flag{you_fixed_the_header}",
+    "max_tries": "99",
+    "active": "0",
+    "files": [
+        "view.bmp"
+    ],
+    "author": "Matt Langois"
+  }

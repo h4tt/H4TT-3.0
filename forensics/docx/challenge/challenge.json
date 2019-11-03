@@ -3,7 +3,7 @@
     "category": "forensics",
     "description": "",
     "link": "",
-    "points": "40",
+    "points": "45",
     "flag": "flag{h1dd3n-w0rdz}",
     "max_tries": "99",
     "active": "0",
