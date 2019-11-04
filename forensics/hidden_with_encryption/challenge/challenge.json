@@ -8,8 +8,7 @@
     "max_tries": "99",
     "active": "0",
     "files": [
-        "image.enc",
-        "header.txt"
+        "image.enc"
     ],
     "author": "Forest Anderson"
   }
