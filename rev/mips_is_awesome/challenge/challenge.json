@@ -1,0 +1,14 @@
+{
+    "title": "Mips Is Awesome!",
+    "category": "rev",
+    "description": "Who needs x86 when you have MIPS?",
+    "link": "",
+    "points": "20",
+    "flag": "flag{unkn0wn_pl4tf0rm}",
+    "max_tries": "99",
+    "active": "0",
+    "files": [
+        "mips_is_awesome"
+    ],
+    "author": "Matt Langois"
+  }
