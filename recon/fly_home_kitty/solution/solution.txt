@@ -1,3 +1,3 @@
-The cat can be found in the video sentry.mp4 as part of the "Sentry Mode Active" recon challenge. It can be seen around 6:14 into the video. The street that the car is driving on is Seneca.
+The cat can be found in one of the clips from the "Sentry Mode Active" recon challenge. It can be seen in 2019-11-09_09-50-00-front.mp4 at around 0:52 into the video. The street that the car is driving on is Seneca.
 
 flag{SENECA}
