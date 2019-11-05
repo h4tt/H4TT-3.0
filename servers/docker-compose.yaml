@@ -16,7 +16,7 @@ services:
   # 9002  Evilcorp login server
   # 9003  Evilcorp server
   # 9004  Evilcorp server SSH
-  # 9005  
+  # 9005  Go With The Flow Server
 
 
   # Nginx
@@ -108,21 +108,36 @@ services:
       context: ../
     ports:
       - "9001:1337"
+    networks:
+      default:
 
   evilcorp-login-server:
     build:
-      dockerfile: server/evilcorp_login_server/Dockerfile
+      dockerfile: servers/evilcorp_login_server/Dockerfile
       context: ../
     ports:
       - "9002:1337"
+    networks:
+      default:
 
   evilcorp-server:
     build:
-      dockerfile: server/evil_corp/Dockerfile
+      dockerfile: servers/evil_corp/Dockerfile
       context: ../
     ports:
       - "9003:3000" # Server
       - "9004:22"   # SSH
+    networks:
+      default:
+
+  go-with-the-flow-server:
+    build:
+      dockerfile: servers/go_with_the_flow/Dockerfile
+      context: ../
+    ports:
+      - "9005:9000"
+    networks:
+      default:
 
 networks:
     default:
