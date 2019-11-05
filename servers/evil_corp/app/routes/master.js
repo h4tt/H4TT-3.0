@@ -22,6 +22,10 @@ router.get("/s3cr3ts", (req, res) => {
 const evilcorpRouter = require("./evilcorp");
 router.use("/evilcorp", evilcorpRouter);
 
+// JWT Challenge
+const jwtRouter = require("./jwtChallenge");
+router.use("/the-red-pill", jwtRouter);
+
 // 404 error handler
 router.get("*", (req, res) => {
     sendStatus(req.url, res, 404);
