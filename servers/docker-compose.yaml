@@ -17,6 +17,7 @@ services:
   # 9003  Evilcorp server
   # 9004  Evilcorp server SSH
   # 9005  Go With The Flow Server
+  # 9006  Phone Access server
 
 
   # Nginx
@@ -136,6 +137,15 @@ services:
       context: ../
     ports:
       - "9005:9000"
+    networks:
+      default:
+
+  phone-access-server:
+    build:
+      dockerfile: servers/phone_access_server/Dockerfile
+      context: ../
+    ports:
+      - "9006:1337"
     networks:
       default:
 
