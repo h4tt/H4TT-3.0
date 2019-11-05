@@ -11,9 +11,9 @@ services:
   #
   # - Challenges -
   #
-  # 9000  
-  # 9001  
-  # 9002  
+  # 9000  Talk to me launcher
+  # 9001  License server
+  # 9002  Evilcorp login server
   # 9003  
   # 9004  
   # 9005  
@@ -85,21 +85,36 @@ services:
       ctfd:
 
   # Challenges
-  talk-to-me-launcher:
-    build:
-      dockerfile: servers/talk_to_me/Dockerfile
-      context: ../
-    volumes:
-      - "/var/run/docker.sock:/var/run/docker.sock"
-    ports:
-      - "9000:22"
+
+  # talk-to-me-launcher:
+  #   build:
+  #     dockerfile: servers/talk_to_me/Dockerfile
+  #     context: ../
+  #   volumes:
+  #     - "/var/run/docker.sock:/var/run/docker.sock"
+  #   ports:
+  #     - "9000:22"
     
-  talk-to-me-challenge:
+  # talk-to-me-challenge:
+  #   build:
+  #     dockerfile: Dockerfile
+  #     context: ../pwn/talk_to_me/challenge
+  #   entrypoint: "bash -c"
+  #   command: "exit 0"
+
+  license-server:
     build:
-      dockerfile: Dockerfile
-      context: ../pwn/talk_to_me/challenge
-    entrypoint: "bash -c"
-    command: "exit 0"
+      dockerfile: servers/license/Dockerfile
+      context: ../
+    ports:
+      - "9001:1337"
+
+  ecorp-login-server:
+    build:
+      dockerfile: server/ecorp_login_server/Dockerfile
+      context: ../
+    ports:
+      - "9002:1337"
 
 networks:
     default:
