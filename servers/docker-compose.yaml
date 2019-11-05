@@ -14,8 +14,8 @@ services:
   # 9000  Talk to me launcher
   # 9001  License server
   # 9002  Evilcorp login server
-  # 9003  
-  # 9004  
+  # 9003  Evilcorp server
+  # 9004  Evilcorp server SSH
   # 9005  
 
 
@@ -111,10 +111,18 @@ services:
 
   evilcorp-login-server:
     build:
-      dockerfile: server/ecorp_login_server/Dockerfile
+      dockerfile: server/evilcorp_login_server/Dockerfile
       context: ../
     ports:
       - "9002:1337"
+
+  evilcorp-server:
+    build:
+      dockerfile: server/evil_corp/Dockerfile
+      context: ../
+    ports:
+      - "9003:3000" # Server
+      - "9004:22"   # SSH
 
 networks:
     default:

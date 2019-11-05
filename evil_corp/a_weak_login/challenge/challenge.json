@@ -3,7 +3,7 @@
     "category": "evil_corp",
     "description": "Looks like the leaked memo might reveal some security vulnerabilities on the login form. See if you can't gain access.",
     "hint": "You can GET an HTTP page but also XXXX an HTTP page.",
-    "link": "evilcorp.h4tt.ca",
+    "link": "https://evilcorp.h4tt.ca",
     "points": "50",
     "flag": "flag{wh0_n33d5_l061n_cr3d5}",
     "max_tries": "99",
