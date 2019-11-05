@@ -15,9 +15,10 @@ services:
   # 9001  License server
   # 9002  Evilcorp login server
   # 9003  Evilcorp server
-  # 9004  Evilcorp server SSH
-  # 9005  Go With The Flow Server
+  # 9004  Evilcorp SSH
+  # 9005  Go With The Flow server
   # 9006  Phone Access server
+  # 9007  Not The Bots server
 
 
   # Nginx
@@ -146,6 +147,15 @@ services:
       context: ../
     ports:
       - "9006:1337"
+    networks:
+      default:
+
+  not-the-bots-server:
+    build:
+      dockerfile: servers/not_the_bots_server/Dockerfile
+      context: ../
+    ports:
+      - "9007:3000"
     networks:
       default:
 
