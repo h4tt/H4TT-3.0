@@ -55,6 +55,8 @@
 
 [Risking Fizzy Servers | 50](https://github.com/h4tt/H4TT-3.0/tree/master/recon/risking_fizzy_servers)
 
+[Sentry Mode Active | 50](https://github.com/h4tt/H4TT-3.0/tree/master/recon/sentry_mode_active)
+
 ## rev
 [Mips Is Awesome! | 20](https://github.com/h4tt/H4TT-3.0/tree/master/rev/mips_is_awesome)
 
