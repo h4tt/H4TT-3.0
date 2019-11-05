@@ -1,0 +1,6 @@
+The public key is vulnerable to the ROCA attack. This was hinted to by the Estonian identity cards, which had the same problem in 2017. You need to find something that makes use of the attack, such as: https://github.com/argilo/ROCA_SAS
+
+With this, you need to run the following code with Sage installed.
+
+`sage roca.sage card_pub.pem key.priv`
+
