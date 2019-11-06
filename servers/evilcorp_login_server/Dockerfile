@@ -4,6 +4,8 @@ COPY ./ /app
 
 WORKDIR /app
 
+RUN ls
+
 RUN apk add nodejs npm && \
     npm install
 
