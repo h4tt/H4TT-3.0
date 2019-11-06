@@ -1,0 +1,159 @@
+version: '3'
+services:
+
+  # Port list
+  #
+  # - Scoreboard -
+  #
+  # 80    Nginx
+  # 443   Nginx
+  # 8000  CTFd
+  #
+  # - Challenges -
+  #
+  # 9000  Talk to me launcher
+  # 9001  License server
+  # 9002  Evilcorp login server
+  # 9003  Evilcorp server
+  # 9004  Evilcorp SSH
+  # 9005  Go With The Flow server
+  # 9006  Phone Access server
+  # 9007  Not The Bots server
+
+
+  # Nginx
+  # nginx-ssl-proxy:
+  #   build:
+  #     context: nginx/
+  #     dockerfile: Dockerfile
+  #   restart: always
+  #   environment:
+  #     SERVERNAME: scoreboard.h4tt.ca
+  #     EXTRANAMES: evilcorp.h4tt.ca
+  #   ports:
+  #     - "80:80"
+  #     - "443:443"
+  #   volumes:
+  #     - "/etc/letsencrypt"
+  #   networks:
+  #     default:
+
+  # # CTFd
+  # ctfd:
+  #   image: ctfd/ctfd
+  #   user: root
+  #   restart: always
+  #   ports:
+  #     - "8000:8000"
+  #   environment:
+  #     - UPLOAD_FOLDER=/var/uploads
+  #     - DATABASE_URL=mysql+pymysql://root:ctfd@db/ctfd
+  #     - REDIS_URL=redis://cache:6379
+  #     - WORKERS=1
+  #     - LOG_FOLDER=/var/log/CTFd
+  #     - ACCESS_LOG=-
+  #     - ERROR_LOG=-
+  #   volumes:
+  #     - .data/CTFd/logs:/var/log/CTFd
+  #     - .data/CTFd/uploads:/var/uploads
+  #     - .:/opt/CTFd:ro
+  #   depends_on:
+  #     - db
+  #   networks:
+  #     default:
+  #     ctfd:
+
+  # db:
+  #   image: mariadb:10.4
+  #   restart: always
+  #   environment:
+  #     - MYSQL_ROOT_PASSWORD=ctfd
+  #     - MYSQL_USER=ctfd
+  #     - MYSQL_PASSWORD=ctfd
+  #     - MYSQL_DATABASE=ctfd
+  #   volumes:
+  #     - .data/mysql:/var/lib/mysql
+  #   # This command is required to set important mariadb defaults
+  #   command: [mysqld, --character-set-server=utf8mb4, --collation-server=utf8mb4_unicode_ci, --wait_timeout=28800, --log-warnings=0]
+  #   networks:
+  #     ctfd:
+
+  # cache:
+    # image: redis:4
+    # restart: always
+    # volumes:
+    # - .data/redis:/data
+    # networks:
+    #   ctfd:
+
+  # Challenges
+
+  # talk-to-me-launcher:
+  #   build:
+  #     dockerfile: servers/talk_to_me/Dockerfile
+  #     context: ../
+  #   volumes:
+  #     - "/var/run/docker.sock:/var/run/docker.sock"
+  #   ports:
+  #     - "9000:22"
+    
+  # talk-to-me-challenge:
+  #   build:
+  #     dockerfile: Dockerfile
+  #     context: ../pwn/talk_to_me/challenge
+  #   entrypoint: "bash -c"
+  #   command: "exit 0"
+
+  license-server:
+    build:
+      context: license_server/
+    ports:
+      - "9001:1337"
+    networks:
+      default:
+
+  evilcorp-login-server:
+    build:
+      context: evilcorp_login_server/
+    ports:
+      - "9002:1337"
+    networks:
+      default:
+
+  evilcorp-server:
+    build:
+      context: evil_corp/
+    ports:
+      - "9003:3000" # Server
+      - "9004:22"   # SSH
+    networks:
+      default:
+
+  go-with-the-flow-server:
+    build:
+      context: go_with_the_flow/
+    ports:
+      - "9005:9000"
+    networks:
+      default:
+
+  # phone-access-server:
+  #   build:
+  #     context: phone_access_server/
+  #   ports:
+  #     - "9006:1337"
+  #   networks:
+  #     default:
+
+  not-the-bots-server:
+    build:
+      context: not_the_bots_server/
+    ports:
+      - "9007:3000"
+    networks:
+      default:
+
+networks:
+    default:
+    ctfd:
+      internal: true

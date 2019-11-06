@@ -21,7 +21,7 @@ app.get('/robots.txt', (req, res) => {
 });
 
 app.get('/flag-e344db6c4d829be348157715b2658ce5d18a659f', (req, res) => {
-  res.send(`${FLAG} <p> You should not rely on obfuscating robtos.txt for security.`);
+  res.send(`${FLAG} <p> You should not rely on obfuscating robots.txt for security.`);
 });
 
 app.get('/*', (req, res) => {

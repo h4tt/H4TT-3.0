@@ -3,7 +3,7 @@
     "category": "evil_corp",
     "description": "Looks like the Evil Corp mole has given us an encrypted file, see if you can't decrypt it.",
     "hint": "Ever built a dictionary?",
-    "link": "evilcorp.h4tt.ca",
+    "link": "https://evilcorp.h4tt.ca",
     "points": "40",
     "flag": "flag{c4p741n_crunch}",
     "max_tries": "99",
