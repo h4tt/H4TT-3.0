@@ -38,6 +38,8 @@
 
 [An Old Way | 63](https://github.com/h4tt/H4TT-3.0/tree/master/forensics/an_old_way)
 
+[Hidden with encryption | 80](https://github.com/h4tt/H4TT-3.0/tree/master/forensics/hidden_with_encryption)
+
 ## misc
 [Racing the Beam | 40](https://github.com/h4tt/H4TT-3.0/tree/master/misc/racing_the_beam)
 
