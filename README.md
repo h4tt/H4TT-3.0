@@ -80,6 +80,12 @@
 ## web
 [Starting at the Source | 10](https://github.com/h4tt/H4TT-3.0/tree/master/web/starting_at_the_source)
 
+[Report Generator | 20](https://github.com/h4tt/H4TT-3.0/tree/master/web/report_generator)
+
+[Fast Cookie | 25](https://github.com/h4tt/H4TT-3.0/tree/master/web/fast_cookie)
+
+[What is This | 30](https://github.com/h4tt/H4TT-3.0/tree/master/web/what_is_this)
+
 [The Rabbit Hole | 35](https://github.com/h4tt/H4TT-3.0/tree/master/web/rabbit_hole)
 
 [Not The Bots You Are Looking For | 50](https://github.com/h4tt/H4TT-3.0/tree/master/web/not_the_bots_you_are_looking_for)
