@@ -4,7 +4,7 @@
     "description": "Morpheus has an interesting decision for you Neo.",
     "hint": "alg is an interesting jwt payload header.",
     "link": "https://evilcorp.h4tt.ca/the-red-pill",
-    "points": "40",
+    "points": "85",
     "flag": "flag{d0n7_7ru57_7h3_4lg}",
     "max_tries": "99",
     "active": "0",
