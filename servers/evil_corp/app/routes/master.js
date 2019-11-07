@@ -26,6 +26,10 @@ router.use("/evilcorp", evilcorpRouter);
 const jwtRouter = require("./jwtChallenge");
 router.use("/the-red-pill", jwtRouter);
 
+// XSS Challenge
+const xssRouter = require("./xssChallenge");
+router.use("/generate-report", xssRouter);
+
 // Rabbit Hole Challenge
 const rabbitHoleRouter = require("./rabbitHole");
 router.use("/rabbit-hole", rabbitHoleRouter);

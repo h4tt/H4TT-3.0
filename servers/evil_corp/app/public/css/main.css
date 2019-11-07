@@ -112,6 +112,18 @@ hr {
     padding-bottom: 3px;
 }
 
+.form-select {
+    background: transparent;
+    border: 1px dashed #b5e853;
+    font-family: "Share Tech Mono", monospace;
+    color: rgb(236,235,232);
+    font-size: 1.13em;
+}
+
+.form-select option {
+    background-color: black;
+}
+
 .error {
     color: red;
     font-weight: bold;
