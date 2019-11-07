@@ -70,9 +70,9 @@
 [Eye of the Parser | 120](https://github.com/h4tt/H4TT-3.0/tree/master/stego/eye_of_the_parser)
 
 ## web
-[The Red Pill | 40](https://github.com/h4tt/H4TT-3.0/tree/master/web/the_red_pill)
-
 [Not The Bots You Are Looking For | 50](https://github.com/h4tt/H4TT-3.0/tree/master/web/not_the_bots_you_are_looking_for)
 
 [For the Love of Codd | 70](https://github.com/h4tt/H4TT-3.0/tree/master/web/for_the_love_of_codd)
+
+[The Red Pill | 85](https://github.com/h4tt/H4TT-3.0/tree/master/web/the_red_pill)
 
