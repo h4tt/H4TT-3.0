@@ -82,3 +82,5 @@
 
 [For the Love of Codd | 70](https://github.com/h4tt/H4TT-3.0/tree/master/web/for_the_love_of_codd)
 
+[The Red Pill | 85](https://github.com/h4tt/H4TT-3.0/tree/master/web/the_red_pill)
+

@@ -1,0 +1,27 @@
+<h1>The Red Pill</h1>
+<div class="two-column grid-vertical-center grid-horizontal-center">
+    <img src="/imgs/morpheus.jpg">
+    <div>
+        <p>
+            This is your last chance. After this there is no turning back. You take the blue pill, the story ends, you wake up in your bed and believe whatever you want to believe. You take the red pill, you stay in Wonderland and I show you how deep the rabbit hole goes...
+        </p>
+        <form id="request-pill">
+            <div class="two-column grid-horizontal-center">
+                <input id="token" class="login-inputs" placeholder="Choose Pill" type="text" required>
+                <input class="login-button" type="submit" value="SUBMIT">
+            </div>
+        </form>
+        <p id="response"></p>
+    </div>
+</div>
+<div class="two-column grid-horizontal-center force-half">
+    <div>
+        <h4>You can request a pill above with this token</h4>
+        <pre class="overflow-wrap">{{ defaultToken }}</pre>
+    </div>
+    <div>
+        <h4>You can verify the above token with this key</h4>
+        <pre class="overflow-wrap">{{ publicKey }}</pre>
+    </div>
+</div>
+<script src="/js/redPill.js"></script>
