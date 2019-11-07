@@ -26,6 +26,10 @@ router.use("/evilcorp", evilcorpRouter);
 const jwtRouter = require("./jwtChallenge");
 router.use("/the-red-pill", jwtRouter);
 
+// Fast Cookie Challenge
+const fastCookieRouter = require("./fastCookie");
+router.use("/fast-cookie", fastCookieRouter);
+
 // XSS Challenge
 const xssRouter = require("./xssChallenge");
 router.use("/generate-report", xssRouter);
