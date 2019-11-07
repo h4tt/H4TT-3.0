@@ -1,6 +1,6 @@
 FROM alpine
 
-COPY pwn/talk_to_me/challenge/run-challenge.sh /app/
+COPY talk_to_me_ssh/run-challenge.sh /app/
 
 RUN apk add openssh-server docker bash busybox-suid && \
     mkdir /var/run/sshd && \
@@ -10,6 +10,5 @@ RUN apk add openssh-server docker bash busybox-suid && \
     echo "eviluser:12345" | chpasswd && \
     ssh-keygen -f /etc/ssh/ssh_host_rsa_key -N '' -t rsa && \
     ssh-keygen -f /etc/ssh/ssh_host_dsa_key -N '' -t dsa
-
 
 CMD ["/usr/sbin/sshd", "-D"]

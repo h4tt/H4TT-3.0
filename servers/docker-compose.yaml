@@ -106,17 +106,12 @@ services:
     depends_on:
       - docker
     build:
-      dockerfile: servers/talk_to_me/Dockerfile
-      context: ../
+      dockerfile: talk_to_me_launcher/Dockerfile
+      context: ./
     ports:
       - "9000:22"
     volumes:
       - "./dind-certs:/certs/client"
-    environment:
-      DOCKER_HOST: tcp://docker:2376
-      DOCKER_TLS_VERIFY: 1
-      DOCKER_CERT_PATH: /certs/client
-      DOCKER_TLS_CERTDIR: /certs
     networks:
       default:
       dind:
@@ -130,6 +125,7 @@ services:
       - "./talk_to_me_ssh/:/app"
       - "./dind-certs:/certs/client"
     environment:
+      IMAGE_NAME: talk-to-me-challenge
       DOCKER_HOST: tcp://docker:2376
       DOCKER_TLS_VERIFY: 1
       DOCKER_CERT_PATH: /certs/client

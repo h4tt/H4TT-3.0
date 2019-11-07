@@ -2,10 +2,10 @@
 
 FROM alpine:3.10.3
 
-RUN apk add docker
+RUN apk add docker bash;
 
-RUN echo "#!/bin/ash" >> /run.sh && \
-    echo "until docker ps; do sleep 2; done; docker build -f /app/Dockerfile /app" >> /run.sh && \
+RUN echo "#!/bin/bash" >> /run.sh && \
+    echo "env; cat /run.sh; until docker ps; do sleep 2; done; docker build -f /app/Dockerfile -t \"\${IMAGE_NAME}\" /app" >> /run.sh && \
     chmod +x /run.sh
 
-CMD [ "/run.sh" ]
+ENTRYPOINT [ "/run.sh" ]
