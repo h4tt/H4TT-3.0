@@ -26,6 +26,10 @@ router.use("/evilcorp", evilcorpRouter);
 const jwtRouter = require("./jwtChallenge");
 router.use("/the-red-pill", jwtRouter);
 
+// XSS Challenge
+const xssRouter = require("./xssChallenge");
+router.use("/generate-report", xssRouter);
+
 // 404 error handler
 router.get("*", (req, res) => {
     sendStatus(req.url, res, 404);
