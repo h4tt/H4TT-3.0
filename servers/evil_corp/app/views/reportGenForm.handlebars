@@ -1,0 +1,16 @@
+<h1>Evil Corp Report Generation</h1>
+
+<p>Fill out the form below to generate a report and submit it to our systems.</p>
+
+<form method="POST" action="/generate-report">
+    <input class="login-inputs" name="name" type="text" placeholder="Name" required>
+    <br>
+    <h4 style="display:inline-block">Report Type</h4>
+    <select class="form-select" name="reportType">
+        <option value="clock in">Clock In</option>
+        <option value="clock out">Clock Out</option>
+        <option value="data breach">Data Breach</option>
+    </select>
+    <br>
+    <input class="login-button" name="submit" type="submit">
+</form>
