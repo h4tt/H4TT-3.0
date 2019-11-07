@@ -1,6 +1,12 @@
-The public key is vulnerable to the ROCA attack. This was hinted to by the Estonian identity cards, which had the same problem in 2017. You need to find something that makes use of the attack, such as: https://github.com/argilo/ROCA_SAS
+First, you need to find the public key on Jaak's account, https://gitlab.com/jaakjoeorg.keys
 
-With this, you need to run the following code with Sage installed.
+The public key is vulnerable to the ROCA attack. This was hinted to by the Estonian identity cards, which had the same problem in 2017. You need to find something that makes use of the attack, such as: https://github.com/argilo/ROCA_SAS or https://gitlab.com/jix/neca
 
-`sage roca.sage card_pub.pem key.priv`
+Once you have cracked the public key and have p and q, you can generate the private key with a tool like https://github.com/ius/rsatool
 
+p = 126964385406516869019574570507880488608489232876197956365247703493295519051033
+q = 131206414487224030504707496238767554301002010236858260973825608596162602205471
+
+Finally, with the private key, you can clone the repo and find the flag in README
+
+flag{c0pp3rsmith_4nd_j030rg_b0th_b4ck_fr0m_d34d}
