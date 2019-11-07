@@ -26,6 +26,10 @@ router.use("/evilcorp", evilcorpRouter);
 const jwtRouter = require("./jwtChallenge");
 router.use("/the-red-pill", jwtRouter);
 
+router.get("/what-is-this", (req, res) => {
+    res.render("jsFuck", { title: "Evil Corp - Requires Deciphering" });
+});
+
 // 404 error handler
 router.get("*", (req, res) => {
     sendStatus(req.url, res, 404);
