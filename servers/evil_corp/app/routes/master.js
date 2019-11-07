@@ -26,6 +26,10 @@ router.use("/evilcorp", evilcorpRouter);
 const jwtRouter = require("./jwtChallenge");
 router.use("/the-red-pill", jwtRouter);
 
+// Rabbit Hole Challenge
+const rabbitHoleRouter = require("./rabbitHole");
+router.use("/rabbit-hole", rabbitHoleRouter);
+
 // 404 error handler
 router.get("*", (req, res) => {
     sendStatus(req.url, res, 404);
