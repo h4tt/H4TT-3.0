@@ -30,6 +30,10 @@ router.use("/the-red-pill", jwtRouter);
 const xssRouter = require("./xssChallenge");
 router.use("/generate-report", xssRouter);
 
+// Rabbit Hole Challenge
+const rabbitHoleRouter = require("./rabbitHole");
+router.use("/rabbit-hole", rabbitHoleRouter);
+
 // 404 error handler
 router.get("*", (req, res) => {
     sendStatus(req.url, res, 404);
