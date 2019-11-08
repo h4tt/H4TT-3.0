@@ -55,7 +55,7 @@ services:
   # CTFd
   ctfd:
     build:
-      context: CTFd
+      context: ctfd
     user: root
     restart: always
     ports:
@@ -71,7 +71,7 @@ services:
     volumes:
       - .data/CTFd/logs:/var/log/CTFd
       - .data/CTFd/uploads:/var/uploads
-      - ./CTFd/:/opt/CTFd:ro
+      - ./ctfd/:/opt/CTFd:ro
     depends_on:
       - db
     networks:

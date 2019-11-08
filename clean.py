@@ -2,6 +2,8 @@ import os
 import json
 import hashlib
 import shutil
+import base64
+import zipfile
 
 H4TT_VERSION = "3.0"
 
@@ -14,6 +16,12 @@ def md5(fname):
         for chunk in iter(lambda: f.read(4096), b""):
             hash_md5.update(chunk)
     return hash_md5.hexdigest()
+
+def zipdir(path, ziph):
+    # ziph is zipfile handle
+    for root, dirs, files in os.walk(path):
+        for file in files:
+            ziph.write(os.path.join(root, file))
 
 def CleanFolders():
     filenames = os.listdir (".")
@@ -103,11 +111,12 @@ def BuildReadme(categories, output):
                 thisChall['INTERNAL_PATH'].split(os.sep)[2]
             )
 
-    print(totalPoints)
+    print(totalPoints + " points total")
     return output
 
 # Build all of the JSON files for CTFd to import
 def BuildCTFd(categories):
+    print("Building CTFd import file...")
     if os.path.exists("CTFd-import/"):
         shutil.rmtree("CTFd-import/")
 
@@ -199,17 +208,41 @@ def BuildCTFd(categories):
     fileDict['count'] = len(fileDict['results'])
     fileDict['meta'] = {}
 
-    if not os.path.exists("CTFd-import"):
-        os.makedirs("CTFd-import")
+    print("Creating files...")
+    if not os.path.exists("CTFd-import/db"):
+        os.makedirs("CTFd-import/db")
 
-    with open('CTFd-import/challenges.json', 'w') as outfile:
+    with open('CTFd-import/db/challenges.json', 'w') as outfile:
         json.dump(challengeDict, outfile)
 
-    with open('CTFd-import/flags.json', 'w') as outfile:
+    with open('CTFd-import/db/flags.json', 'w') as outfile:
         json.dump(flagDict, outfile)
 
-    with open('CTFd-import/files.json', 'w') as outfile:
+    with open('CTFd-import/db/files.json', 'w') as outfile:
         json.dump(fileDict, outfile)
+
+    open('CTFd-import/db/alembic_version.json', 'a').close()
+    open('CTFd-import/db/awards.json', 'a').close()
+    open('CTFd-import/db/config.json', 'a').close()
+    open('CTFd-import/db/hints.json', 'a').close()
+    open('CTFd-import/db/notifications.json', 'a').close()
+
+    with open('CTFd-import/db/pages.json', 'w') as outfile:
+        outfile.write(str(base64.b64decode('''eyJjb3VudCI6IDEsICJyZXN1bHRzIjogW3siaWQiOiAxLCAidGl0bGUiOiBudWxsLCAicm91dGUiOiAiaW5kZXgiLCAiY29udGVudCI6ICI8ZGl2IGNsYXNzPVwicm93XCI+XG4gICAgPGRpdiBjbGFzcz1cImNvbC1tZC02IG9mZnNldC1tZC0zXCI+XG4gICAgICAgIDxpbWcgY2xhc3M9XCJ3LTEwMCBteC1hdXRvIGQtYmxvY2tcIiBzdHlsZT1cIm1heC13aWR0aDogNTAwcHg7cGFkZGluZzogNTBweDtwYWRkaW5nLXRvcDogMTR2aDtcIiBzcmM9XCJ0aGVtZXMvY29yZS9zdGF0aWMvaW1nL2xvZ28ucG5nXCIgLz5cbiAgICAgICAgPGgzIGNsYXNzPVwidGV4dC1jZW50ZXJcIj5cbiAgICAgICAgICAgIDxwPkEgY29vbCBDVEYgcGxhdGZvcm0gZnJvbSA8YSBocmVmPVwiaHR0cHM6Ly9jdGZkLmlvXCI+Y3RmZC5pbzwvYT48L3A+XG4gICAgICAgICAgICA8cD5Gb2xsb3cgdXMgb24gc29jaWFsIG1lZGlhOjwvcD5cbiAgICAgICAgICAgIDxhIGhyZWY9XCJodHRwczovL3R3aXR0ZXIuY29tL2N0ZmRpb1wiPjxpIGNsYXNzPVwiZmFiIGZhLXR3aXR0ZXIgZmEtMnhcIiBhcmlhLWhpZGRlbj1cInRydWVcIj48L2k+PC9hPiZuYnNwO1xuICAgICAgICAgICAgPGEgaHJlZj1cImh0dHBzOi8vZmFjZWJvb2suY29tL2N0ZmRpb1wiPjxpIGNsYXNzPVwiZmFiIGZhLWZhY2Vib29rIGZhLTJ4XCIgYXJpYS1oaWRkZW49XCJ0cnVlXCI+PC9pPjwvYT4mbmJzcDtcbiAgICAgICAgICAgIDxhIGhyZWY9XCJodHRwczovL2dpdGh1Yi5jb20vY3RmZFwiPjxpIGNsYXNzPVwiZmFiIGZhLWdpdGh1YiBmYS0yeFwiIGFyaWEtaGlkZGVuPVwidHJ1ZVwiPjwvaT48L2E+XG4gICAgICAgIDwvaDM+XG4gICAgICAgIDxicj5cbiAgICAgICAgPGg0IGNsYXNzPVwidGV4dC1jZW50ZXJcIj5cbiAgICAgICAgICAgIDxhIGhyZWY9XCJhZG1pblwiPkNsaWNrIGhlcmU8L2E+IHRvIGxvZ2luIGFuZCBzZXR1cCB5b3VyIENURlxuICAgICAgICA8L2g0PlxuICAgIDwvZGl2PlxuPC9kaXY+IiwgImRyYWZ0IjogMCwgImhpZGRlbiI6IG51bGwsICJhdXRoX3JlcXVpcmVkIjogbnVsbH1dLCAibWV0YSI6IHt9fQ==''')))
+    
+    open('CTFd-import/db/solves.json', 'a').close()
+    open('CTFd-import/db/submissions.json', 'a').close()
+    open('CTFd-import/db/tags.json', 'a').close()
+    open('CTFd-import/db/teams.json', 'a').close()
+    open('CTFd-import/db/tracking.json', 'a').close()
+    open('CTFd-import/db/unlocks.json', 'a').close()
+    open('CTFd-import/db/users.json', 'a').close()
+
+    print("Zipping...")
+    zipf = zipfile.ZipFile('CTFd-import/ctfd-import.zip', 'w', zipfile.ZIP_DEFLATED)
+    zipdir('CTFd-import/', zipf)
+    zipf.close()
+
 
 
 if __name__ == "__main__":
