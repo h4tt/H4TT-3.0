@@ -90,10 +90,56 @@ def BuildReadme(categories, output):
             )
     return output
 
+def BuildCTFd(categories):
+    challengeDict = {}
+    challengeDict['results'] = []
+
+    idCount = 1
+    idList = {}
+    for category in categories:
+        for challengeName in categories[category]:
+            challenge = categories[category][challengeName]
+            idList[challenge['title']] = [idCount, challenge]
+            idCount += 1
+
+    for idElement in idList.values():
+        id = idElement[0]
+        challenge = idElement[1]
+
+        print(challenge)
+
+        thisChallenge = {}
+        challengeDict['results'].append(thisChallenge)
+
+        thisChallenge['id'] = id
+        thisChallenge['name'] = challenge['title']
+        thisChallenge['description'] = challenge['description'].replace('\n', '<br>') + "<br><br>Author: " + challenge['author']
+        thisChallenge['max_attempts'] = int(challenge['max_tries'])
+        thisChallenge['value'] = int(challenge['points'])
+        thisChallenge['category'] = challenge['category']
+        thisChallenge['type'] = "standard"
+        thisChallenge['state'] = "visible"
+
+        if 'required' in thisChallenge:
+            thisChallenge['requirements'] = {}
+            thisChallenge['requirements']['prerequisites'] = [idList[thisChallenge['required']][0]]
+        else:
+            thisChallenge['requirements'] = None
+
+        
+
+    challengeDict['count'] = len(challengeDict['results'])
+    challengeDict['meta'] = {}
+
+    with open('data.json', 'w') as outfile:
+        json.dump(challengeDict, outfile)
+
+
 if __name__ == "__main__":
     CleanFolders()
     categories = ScrapeJSON(output)
     output = BuildReadme(categories, output)
+    BuildCTFd(categories)
 
     text_file = open("README.md", "w")
     text_file.write(output)
