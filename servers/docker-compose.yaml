@@ -233,3 +233,6 @@ networks:
     dind:
       ipam:
         driver: default
+
+volumes:
+  portainer_data:
