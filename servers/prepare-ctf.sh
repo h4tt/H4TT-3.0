@@ -20,13 +20,4 @@ rm -rf CTFd-Theme-StormCTF
 
 cd ../../
 
-docker build -t ctfd-import ctfd
-docker run \
-    -v "$(pwd)/.data/CTFd/logs:/var/log/CTFd" \
-    -v "$(pwd)/.data/CTFd/uploads:/var/uploads" \
-    -v "$(pwd)/ctfd/:/opt/CTFd:ro" \
-    -v "$(pwd)/../CTFd-import:/import" \
-    -w /opt/CTFd/ \
-    --entrypoint /bin/sh \
-    ctfd-import \
-    import.py /import/ctfd-import.zip
+docker-compose up db cache ctfd-import
