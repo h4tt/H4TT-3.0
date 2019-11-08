@@ -8,7 +8,7 @@
     "max_tries": "99",
     "active": "0",
     "files": [
-        "./Challenge.zip"
+        "Challenge.zip"
     ],
     "author": "Matt Penny"
 }
