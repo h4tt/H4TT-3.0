@@ -96,9 +96,10 @@ services:
       - .data/CTFd/uploads:/var/uploads
       - ./ctfd/:/opt/CTFd:ro
       - ./../CTFd-import:/import
+      - ./:/servers
     depends_on:
       - db
-    command: "python import.py /import/ctfd-import.zip"
+    entrypoint: /servers/import-entrypoint.sh
     networks:
       ctfd:
 

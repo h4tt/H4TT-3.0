@@ -6,6 +6,8 @@ cd ..
 python3 clean.py
 cd servers
 
+docker-compose up db cache ctfd-import
+
 mkdir ctfd/plugins
 cd ctfd/plugins
 
@@ -17,7 +19,3 @@ mv CTFd-Theme-StormCTF/stormctf ../CTFd/themes/
 mv CTFd-Theme-StormCTF/plugins/challenges/assets/view.html ../CTFd/plugins/challenges/assets/view.html
 mv CTFd-Theme-StormCTF/plugins/challenges/assets/view.js ../CTFd/plugins/challenges/assets/view.js
 rm -rf CTFd-Theme-StormCTF
-
-cd ../../
-
-docker-compose up db cache ctfd-import
