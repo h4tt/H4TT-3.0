@@ -1,0 +1,3 @@
+This is a ciphertext encoded in base58. It uses the same alphabet at the Ripple cryptocurrency. It can be quite easily decoded on cyberchef.
+
+flag{n0t_s0_4mb1gu0us}
