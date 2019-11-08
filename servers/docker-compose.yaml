@@ -22,21 +22,21 @@ services:
 
 
   # Nginx
-  # nginx-ssl-proxy:
-  #   build:
-  #     context: nginx/
-  #     dockerfile: Dockerfile
-  #   restart: always
-  #   environment:
-  #     SERVERNAME: scoreboard.h4tt.ca
-  #     EXTRANAMES: evilcorp.h4tt.ca
-  #   ports:
-  #     - "80:80"
-  #     - "443:443"
-  #   volumes:
-  #     - "/etc/letsencrypt"
-  #   networks:
-  #     default:
+  nginx-ssl-proxy:
+    build:
+      context: nginx/
+      dockerfile: Dockerfile
+    restart: always
+    environment:
+      SERVERNAME: scoreboard.h4tt.ca
+      EXTRANAMES: evilcorp.h4tt.ca
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - "/etc/letsencrypt"
+    networks:
+      default:
 
   # Docker in Docker
   # Has to be named docker so that the certs it creates work for internal networking
@@ -87,7 +87,7 @@ services:
       - UPLOAD_FOLDER=/var/uploads
       - DATABASE_URL=mysql+pymysql://root:ctfd@db/ctfd
       - REDIS_URL=redis://cache:6379
-      - WORKERS=1
+      - WORKERS=4
       - LOG_FOLDER=/var/log/CTFd
       - ACCESS_LOG=-
       - ERROR_LOG=-
