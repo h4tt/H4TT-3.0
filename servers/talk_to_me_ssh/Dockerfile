@@ -5,7 +5,7 @@ USER root
 
 # Add tools people may use
 RUN apt-get update && \
-	apt-get install --no-install-recommends -y strace && \
+	apt-get install --no-install-recommends -y strace vi vim nano && \
 	echo "root:G-9vn&bK)4Q;ECek" | chpasswd
 
 # Setup challenge
