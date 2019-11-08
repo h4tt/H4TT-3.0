@@ -8,6 +8,8 @@ services:
   # 80    Nginx
   # 443   Nginx
   # 8000  CTFd
+  # 8001  Portainer
+  # 8002  Portainer 2
   #
   # - Challenges -
   #
@@ -37,6 +39,22 @@ services:
       - "/etc/letsencrypt"
     networks:
       default:
+
+  # Portainer
+  portainer:
+    image: portainer/portainer:demo
+    container_name: "portainer-app"
+    command: --admin-password '$$2y$$05$$pzq8cd/pOE8eG2CutVAeg.PaXB2ApmxvxI./OM6pePMcihZJ2G7HC'
+    ports:
+      - "8001:9000"
+      - "8002:8000"
+    networks:
+      ctfd:
+      dind:
+      default:
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - portainer-data:/data
 
   # Docker in Docker
   # Has to be named docker so that the certs it creates work for internal networking
