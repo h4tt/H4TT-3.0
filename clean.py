@@ -148,7 +148,12 @@ def BuildCTFd(categories):
 
         thisChallenge['id'] = id
         thisChallenge['name'] = challenge['title']
-        thisChallenge['description'] = challenge['description'].replace('\n', '<br>') + "<br><br>Author: " + challenge['author']
+
+        description = challenge['description'].replace('\n', '<br>') + "<br><br>Author: " + challenge['author']
+        if challenge['link'] != "":
+            description += '<br><br><a href="' + challenge['link'] + '">' + challenge['link'] + '</a>'
+
+        thisChallenge['description'] = description
         thisChallenge['max_attempts'] = int(challenge['max_tries'])
         thisChallenge['value'] = int(challenge['points'])
         thisChallenge['category'] = challenge['category']
