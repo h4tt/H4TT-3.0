@@ -1,0 +1,15 @@
+{
+    "title": "Lock Picking 4",
+    "category": "phys",
+    "description": "Pick the last 2 locks",
+    "link": "",
+    "points": "45",
+    "flag": "flag{almost_a_picking_expert}",
+    "max_tries": "99",
+    "active": "0",
+    "files": [
+        ""
+    ],
+    "required": "Lock Picking 3",
+    "author": "Forest Anderson"
+  }
