@@ -14,13 +14,8 @@ services:
   # - Challenges -
   #
   # 9000  Talk to me launcher
-  # 9001  License server
-  # 9002  Evilcorp login server
-  # 9003  Evilcorp server
-  # 9004  Evilcorp SSH
-  # 9005  Go With The Flow server
-  # 9006  Phone Access server
-  # 9007  Not The Bots server
+  # 9001  Evilcorp SSH
+  # 9002  Go With The Flow server
 
 
   # Nginx
@@ -36,25 +31,9 @@ services:
       - "80:80"
       - "443:443"
     volumes:
-      - "/etc/letsencrypt"
+      - "~/cert:/etc/letsencrypt"
     networks:
       default:
-
-  # Portainer
-  portainer:
-    image: portainer/portainer:demo
-    container_name: "portainer-app"
-    command: --admin-password '$$2y$$05$$pzq8cd/pOE8eG2CutVAeg.PaXB2ApmxvxI./OM6pePMcihZJ2G7HC'
-    ports:
-      - "8001:9000"
-      - "8002:8000"
-    networks:
-      ctfd:
-      dind:
-      default:
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
-      - portainer-data:/data
 
   # Docker in Docker
   # Has to be named docker so that the certs it creates work for internal networking
@@ -180,16 +159,12 @@ services:
   license-server:
     build:
       context: license_server/
-    ports:
-      - "9001:1337"
     networks:
       default:
 
   evilcorp-login-server:
     build:
       context: evilcorp_login_server/
-    ports:
-      - "9002:1337"
     networks:
       default:
 
@@ -197,8 +172,7 @@ services:
     build:
       context: evil_corp/
     ports:
-      - "9003:3000" # Server
-      - "9004:22"   # SSH
+      - "9001:22"   # SSH
     networks:
       default:
 
@@ -206,23 +180,19 @@ services:
     build:
       context: go_with_the_flow/
     ports:
-      - "9005:9000"
+      - "9002:9000"
     networks:
       default:
 
   phone-access-server:
     build:
       context: phone_access_server/
-    ports:
-      - "9006:1337"
     networks:
       default:
 
   not-the-bots-server:
     build:
       context: not_the_bots_server/
-    ports:
-      - "9007:3000"
     networks:
       default:
 
@@ -233,6 +203,3 @@ networks:
     dind:
       ipam:
         driver: default
-
-volumes:
-  portainer_data:

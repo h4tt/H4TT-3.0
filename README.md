@@ -16,18 +16,18 @@
 
 [License to Crack (Part 2) | 175](https://github.com/h4tt/H4TT-3.0/tree/master/crypto/license_to_crack)
 
-## evil_corp
-[EC 1: Welcome to Evil Corp | 25](https://github.com/h4tt/H4TT-3.0/tree/master/evil_corp/welcome_to_evil_corp)
+## evilcorp
+[EC 1: Welcome to Evil Corp | 25](https://github.com/h4tt/H4TT-3.0/tree/master/evilcorp/welcome_to_evil_corp)
 
-[EC 2: An Interesting Memo | 40](https://github.com/h4tt/H4TT-3.0/tree/master/evil_corp/an_interesting_memo)
+[EC 2: An Interesting Memo | 40](https://github.com/h4tt/H4TT-3.0/tree/master/evilcorp/an_interesting_memo)
 
-[EC 3: A Weak Login | 50](https://github.com/h4tt/H4TT-3.0/tree/master/evil_corp/a_weak_login)
+[EC 3: A Weak Login | 50](https://github.com/h4tt/H4TT-3.0/tree/master/evilcorp/a_weak_login)
 
-[EC 4: Up and Down We Go | 60](https://github.com/h4tt/H4TT-3.0/tree/master/evil_corp/up_and_down)
+[EC 4: Up and Down We Go | 60](https://github.com/h4tt/H4TT-3.0/tree/master/evilcorp/up_and_down)
 
-[EC 5: What Bash? | 70](https://github.com/h4tt/H4TT-3.0/tree/master/evil_corp/what_bash)
+[EC 5: What Bash? | 70](https://github.com/h4tt/H4TT-3.0/tree/master/evilcorp/what_bash)
 
-[EC 6: Root of all Evil | 100](https://github.com/h4tt/H4TT-3.0/tree/master/evil_corp/root_of_all_evil)
+[EC 6: Root of all Evil | 100](https://github.com/h4tt/H4TT-3.0/tree/master/evilcorp/root_of_all_evil)
 
 ## forensics
 [Nickleback | 35](https://github.com/h4tt/H4TT-3.0/tree/master/forensics/nickelback)

@@ -7,4 +7,6 @@ WORKDIR /app
 RUN apk add nodejs npm && \
     npm install
 
+EXPOSE 3000/tcp
+
 CMD [ "node", "index.js" ]

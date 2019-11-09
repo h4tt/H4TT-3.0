@@ -9,4 +9,6 @@ RUN ls
 RUN apk add nodejs npm && \
     npm install
 
+EXPOSE 1337/tcp
+
 CMD [ "node", "challenge-server.js" ]
