@@ -1,0 +1,14 @@
+{
+    "title": "The Agent In Estonia",
+    "category": "crypto",
+    "description": "One of our FSociety agents was undercover in Estonia in 2017. We haven't heard from him since, and we thought he was KIA. However, we've recently recieved a file with their identity card. Clearly the agent is trying to give us some information, but what is it?",
+    "link": "",
+    "points": "180",
+    "flag": "flag{c0pp3rsmith_4nd_j030rg_b0th_b4ck_fr0m_d34d}",
+    "max_tries": "99",
+    "active": "0",
+    "files": [
+        "jaak-joeorg.zip"
+    ],
+    "author": "Clayton Smith and Forest Anderson"
+  }
