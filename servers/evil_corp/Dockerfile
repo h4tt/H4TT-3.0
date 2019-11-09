@@ -2,6 +2,8 @@
 
 FROM alpine:latest
 
+VOLUME [ "/sys/fs/cgroup" ]
+
 ARG SERVER_FILES=directories
 ARG VULN_USER=evilcorp-user
 ARG HTTP_PORT=3000
@@ -24,7 +26,8 @@ RUN apk add --no-cache nodejs \
     shadow \
     openssh \
     openrc \
-    bash
+    bash \
+    zip
 
 
 # --- User Setup ---

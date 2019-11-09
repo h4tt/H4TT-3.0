@@ -14,7 +14,7 @@ touch /run/openrc/softlevel
 # zip file
 zipname=TOP-SECRET.zip
 password=$(cat ./zip-file/password.txt)
-zip -e -j --password "${password}" ./public/${zipname} .zip-file/flag.txt .zip-file/top-secret.md
+zip -e -j --password "${password}" ./public/${zipname} ./zip-file/flag.txt ./zip-file/top-secret.md
 rm -rf ./zip-file
 
 # run http service
