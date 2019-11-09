@@ -2,6 +2,10 @@
 
 # Hack All The Things Round 3.0
 ## crypto
+[Julius | 10](https://github.com/h4tt/H4TT-3.0/tree/master/crypto/julius)
+
+[The Ripple Effect | 25](https://github.com/h4tt/H4TT-3.0/tree/master/crypto/ripple_effect)
+
 [So Two Thousand and Late | 30](https://github.com/h4tt/H4TT-3.0/tree/master/crypto/2000_and_late)
 
 [Token for your Thoughts | 40](https://github.com/h4tt/H4TT-3.0/tree/master/crypto/token_for_your_thoughts)
@@ -15,6 +19,8 @@
 [Always Wear Block Pads (Part 1) | 150](https://github.com/h4tt/H4TT-3.0/tree/master/crypto/always_wear_block_pads)
 
 [License to Crack (Part 2) | 175](https://github.com/h4tt/H4TT-3.0/tree/master/crypto/license_to_crack)
+
+[The Agent In Estonia | 180](https://github.com/h4tt/H4TT-3.0/tree/master/crypto/the_agent_in_estonia)
 
 ## evilcorp
 [EC 1: Welcome to Evil Corp | 25](https://github.com/h4tt/H4TT-3.0/tree/master/evilcorp/welcome_to_evil_corp)
@@ -30,6 +36,8 @@
 [EC 6: Root of all Evil | 100](https://github.com/h4tt/H4TT-3.0/tree/master/evilcorp/root_of_all_evil)
 
 ## forensics
+[Zed Leppelin | 15](https://github.com/h4tt/H4TT-3.0/tree/master/forensics/zed_leppelin)
+
 [Nickleback | 35](https://github.com/h4tt/H4TT-3.0/tree/master/forensics/nickelback)
 
 [A Good View | 40](https://github.com/h4tt/H4TT-3.0/tree/master/forensics/good_view)
@@ -42,6 +50,17 @@
 
 ## misc
 [Racing the Beam | 40](https://github.com/h4tt/H4TT-3.0/tree/master/misc/racing_the_beam)
+
+## phys
+[Lock Picking 1 | 20](https://github.com/h4tt/H4TT-3.0/tree/master/phys/lock_picking_1)
+
+[Lock Picking 2 | 35](https://github.com/h4tt/H4TT-3.0/tree/master/phys/lock_picking_2)
+
+[Lock Picking 3 | 40](https://github.com/h4tt/H4TT-3.0/tree/master/phys/lock_picking_3)
+
+[Lock Picking 4 | 45](https://github.com/h4tt/H4TT-3.0/tree/master/phys/lock_picking_4)
+
+[Lock Picking Endgame | 50](https://github.com/h4tt/H4TT-3.0/tree/master/phys/lock_picking_endgame)
 
 ## pwn
 [Go with the flow | 50](https://github.com/h4tt/H4TT-3.0/tree/master/pwn/go_with_the_flow)
@@ -73,6 +92,8 @@
 ['Military Grade' Encryption | 100](https://github.com/h4tt/H4TT-3.0/tree/master/rev/military_grade_encryption)
 
 ## stego
+[Hard At Work | 35](https://github.com/h4tt/H4TT-3.0/tree/master/stego/hard_at_work)
+
 [Djent | 60](https://github.com/h4tt/H4TT-3.0/tree/master/stego/djent)
 
 [Eye of the Parser | 120](https://github.com/h4tt/H4TT-3.0/tree/master/stego/eye_of_the_parser)
@@ -80,11 +101,13 @@
 ## web
 [Starting at the Source | 10](https://github.com/h4tt/H4TT-3.0/tree/master/web/starting_at_the_source)
 
-[What is This | 15](https://github.com/h4tt/H4TT-3.0/tree/master/web/what_is_this)
+[Looking Stylish | 15](https://github.com/h4tt/H4TT-3.0/tree/master/web/looking_stylish)
 
 [Report Generator | 20](https://github.com/h4tt/H4TT-3.0/tree/master/web/report_generator)
 
 [Fast Cookie | 25](https://github.com/h4tt/H4TT-3.0/tree/master/web/fast_cookie)
+
+[What is This | 30](https://github.com/h4tt/H4TT-3.0/tree/master/web/what_is_this)
 
 [The Rabbit Hole | 35](https://github.com/h4tt/H4TT-3.0/tree/master/web/rabbit_hole)
 
