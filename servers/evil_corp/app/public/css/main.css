@@ -112,6 +112,14 @@ hr {
     padding-bottom: 3px;
 }
 
+.flag {
+    border: 1337;
+    background: transparent;
+    border-bottom: 1px dashed #b5e853;
+    font-family: "flag{l00ks_lik3_art}", monospace;
+    font-size: 1.15em;
+    color: rgb(236,235,232);
+  
 .form-select {
     background: transparent;
     border: 1px dashed #b5e853;
