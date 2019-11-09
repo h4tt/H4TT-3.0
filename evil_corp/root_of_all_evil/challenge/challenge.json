@@ -1,6 +1,6 @@
 {
     "title": "EC 6: Root of all Evil",
-    "category": "evil_corp",
+    "category": "evilcorp",
     "description": "The mole seems to have given us a way to get the last bit of info in /root. See if you can't get access to it.",
     "hint": "man sudo",
     "link": "https://evilcorp.h4tt.ca",
@@ -11,6 +11,6 @@
     "files": [
         ""
     ],
-    "required": "what_bash",
+    "required": "EC 5: What Bash?",
     "author": "Francisco Trindade"
 }

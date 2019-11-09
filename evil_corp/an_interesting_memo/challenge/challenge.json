@@ -1,6 +1,6 @@
 {
     "title": "EC 2: An Interesting Memo",
-    "category": "evil_corp",
+    "category": "evilcorp",
     "description": "Looks like the Evil Corp mole has given us an encrypted file, see if you can't decrypt it.",
     "hint": "Ever built a dictionary?",
     "link": "https://evilcorp.h4tt.ca",
@@ -12,6 +12,6 @@
         ""
 
     ],
-    "required": "welcome_to_evil_corp",
+    "required": "EC 1: Welcome to Evil Corp",
     "author": "Francisco Trindade"
 }
