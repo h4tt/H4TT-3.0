@@ -16,6 +16,10 @@ h1, h2, h3, h4, h5, h6 {
     text-shadow: rgba(0,0,0,0.1) 0px 1px 1px, rgba(96,136,18,0.1) 0px 0px 5px, rgba(96,136,18,0.1) 0px 0px 10px;
 }
 
+h1 {
+    text-align: center;
+}
+
 a {
     color: rgb(99,192,245);
     text-shadow: rgba(0,73,142,0.5) 0px 0px 5px;
@@ -55,6 +59,10 @@ hr {
     hight: 0;
     border: 0;
     border-bottom: 1px dashed #b5e853;
+}
+
+.overflow-wrap {
+    overflow-wrap: break-word;
 }
 
 .content {
@@ -111,6 +119,17 @@ hr {
     font-family: "flag{l00ks_lik3_art}", monospace;
     font-size: 1.15em;
     color: rgb(236,235,232);
+  
+.form-select {
+    background: transparent;
+    border: 1px dashed #b5e853;
+    font-family: "Share Tech Mono", monospace;
+    color: rgb(236,235,232);
+    font-size: 1.13em;
+}
+
+.form-select option {
+    background-color: black;
 }
 
 .error {
@@ -125,4 +144,27 @@ hr {
     min-height: calc(100% - 50px);
     margin-bottom: 0;
     padding-bottom: 0;
+}
+
+.two-column {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-bottom: 50px;
+    grid-column-gap: 25px;
+}
+
+.two-column img {
+    max-width: 100%;
+}
+
+.grid-vertical-center {
+    align-items: center;
+}
+
+.grid-horizontal-center {
+    justify-items: center;
+}
+
+.force-half > div {
+    max-width: 90%;
 }

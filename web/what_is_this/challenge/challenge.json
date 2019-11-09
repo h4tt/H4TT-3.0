@@ -1,0 +1,16 @@
+{
+    "title": "What is This",
+    "category": "web",
+    "description": "Evil Corp posted something interesting that needs some deciphering",
+    "hint": "esolang",
+    "link": "https://evilcorp.h4tt.ca/what-is-this",
+    "points": "30",
+    "flag": "flag{175_v4l1d_j5}",
+    "max_tries": "99",
+    "active": "0",
+    "files": [
+        ""
+    ],
+    "required": "",
+    "author": "Francisco Trindade"
+}

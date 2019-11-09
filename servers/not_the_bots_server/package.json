@@ -1,8 +1,7 @@
 {
-  "name": "Not The Bots You Are Looking For",
+  "name": "not_the_bots",
   "version": "1.0.0",
   "description": "CTF challenge",
-  "main": "index.js",
   "dependencies": {
     "express": "^4.16.3",
     "helmet": "^3.13.0"

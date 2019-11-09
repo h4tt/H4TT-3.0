@@ -1,14 +1,15 @@
 FROM ubuntu
+
 WORKDIR /challenge
 USER root
 
 # Add tools people may use
 RUN apt-get update && \
-	apt-get install -y strace && \
+	apt-get install --no-install-recommends -y strace && \
 	echo "root:G-9vn&bK)4Q;ECek" | chpasswd
 
 # Setup challenge
-ADD talk /challenge/talk
+COPY talk /challenge/talk
 RUN useradd -s /bin/bash eviluser && \
 	chown root:root /challenge && \
 	chmod 1777 /challenge && \
