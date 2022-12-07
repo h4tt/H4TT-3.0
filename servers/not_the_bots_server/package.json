@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "CTF challenge",
   "dependencies": {
-    "express": "^4.16.3",
+    "express": "^4.18.2",
     "helmet": "^3.13.0"
   },
   "devDependencies": {},
