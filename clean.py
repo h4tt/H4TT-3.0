@@ -142,6 +142,9 @@ def BuildReadme(categories, output):
                 thisCat,
                 thisChall['INTERNAL_PATH'].split(os.sep)[2]
             )
+            output += "*Author: %s*\n" % (
+                thisChall['author'],
+            )
             output += "> %s\n\n" % (
                 thisChall['description'].replace('\n', '\n> '),
             )
