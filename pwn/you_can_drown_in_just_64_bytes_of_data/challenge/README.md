@@ -1,0 +1,40 @@
+# You Can Drown in Just 64 Bytes of Data (Part 2)
+
+## Description
+
+```
+{
+    "title": "You Can Drown in Just 64 Bytes of Data (Part 2)",
+    "category": "pwn",
+    "description": "The Evilcorp CEO is onto our trick from last time. See if you can extract more secrets.",
+    "link": "",
+    "points": "65",
+    "max_tries": "99",
+    "active": "0",
+    "files": [],
+    "author": "Matt Penny"
+}
+```
+
+## Solution
+
+<details><summary>Click me</summary>This is a classic buffer overflow. `talk2` uses the `system()` function to
+run `cowsay` and display a speech bubble above an ASCII parrot.
+
+Before being printed, the user's input is appended to a string buffer of size
+64. However, the string/buffer length is not checked when doing the concatenation.
+Since the buffer holding the `cowsay` shell command is located at a higher address
+than the user input buffer on the stack, it is possible to overflow into it and
+execute arbitrary commands. The string already in the buffer is 27 bytes long so
+37 bytes are required to overflow the user input buffer. This information can
+be surmised using a tool such as objdump to disassemble the executable or
+trial and error (assuming there is an overflow from the outset - an error
+will be displayed when the command string becomes invalid).
+
+E.g., `./talk2 $(python2 -c "print 'a'*37 + '/bin/sh'")` will spawn a shell
+
+`talk2` is a setuid program owned by root. Use the overflow/injection
+vulnerability to read the `flag` file.
+
+flag{g0nna_n33d_4_p1ung3r}
+</details>

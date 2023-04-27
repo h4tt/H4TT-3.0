@@ -2,118 +2,191 @@
 
 # Hack All The Things Round 3.0
 ## crypto
-[Julius | 10](https://github.com/h4tt/H4TT-3.0/tree/master/crypto/julius)
+### [Julius | 10](https://github.com/h4tt/H4TT-3.0/tree/master/crypto/julius)
+> wcrx{vk_kl_silk3}
 
-[The Ripple Effect | 25](https://github.com/h4tt/H4TT-3.0/tree/master/crypto/ripple_effect)
+### [The Ripple Effect | 25](https://github.com/h4tt/H4TT-3.0/tree/master/crypto/ripple_effect)
+> Some thing that my big brother is too hard to read, so I change it up a little.
+> 7oLE1AHC4nb8kiaEeaqDuit44S3CCp
 
-[So Two Thousand and Late | 30](https://github.com/h4tt/H4TT-3.0/tree/master/crypto/2000_and_late)
+### [So Two Thousand and Late | 30](https://github.com/h4tt/H4TT-3.0/tree/master/crypto/2000_and_late)
+> 2225086084306530724665
+> 
+> format: flag{deciphered_text_lower-case_with_underscores_for_spaces}
 
-[Token for your Thoughts | 40](https://github.com/h4tt/H4TT-3.0/tree/master/crypto/token_for_your_thoughts)
+### [Token for your Thoughts | 40](https://github.com/h4tt/H4TT-3.0/tree/master/crypto/token_for_your_thoughts)
+> We got word that Evilcorp is trying out a new authentication mechanism. It's pretty new and untested so I doubt it's secure. See if you can break it.
 
-[Boxed Salad | 50](https://github.com/h4tt/H4TT-3.0/tree/master/crypto/boxed_salad)
+### [Boxed Salad | 50](https://github.com/h4tt/H4TT-3.0/tree/master/crypto/boxed_salad)
+> f{shm-nc3lc440t-1ra4rdrh1p}g3--34-h
 
-[Hog | 50](https://github.com/h4tt/H4TT-3.0/tree/master/crypto/hog)
+### [Hog | 50](https://github.com/h4tt/H4TT-3.0/tree/master/crypto/hog)
+> EEMEMEMEMEEEEEEEEMMEEMEMMEMEMMEMEMMEMEMMEEEEMEEEEEEEEMEEMMEMEMMEE
+> 
+> format: FLAG{UPPERCASE-WITH-DASHES-FOR-SPACE}
 
-[Split The Atom | 50](https://github.com/h4tt/H4TT-3.0/tree/master/crypto/split_the_atom)
+### [Split The Atom | 50](https://github.com/h4tt/H4TT-3.0/tree/master/crypto/split_the_atom)
+> LxrXLsgmbyStKmHsSjAujmAzn41kLlXFSIPkKmHsSjAujlWJnkc5n4AmK4A4Mtg6TJbC
 
-[Always Wear Block Pads (Part 1) | 150](https://github.com/h4tt/H4TT-3.0/tree/master/crypto/always_wear_block_pads)
+### [Always Wear Block Pads (Part 1) | 150](https://github.com/h4tt/H4TT-3.0/tree/master/crypto/always_wear_block_pads)
+> We obtained access to EvilCorp's debug tools for product keys. See if you can decipher their internal representation.
 
-[License to Crack (Part 2) | 175](https://github.com/h4tt/H4TT-3.0/tree/master/crypto/license_to_crack)
+### [License to Crack (Part 2) | 175](https://github.com/h4tt/H4TT-3.0/tree/master/crypto/license_to_crack)
+> You must complete part 1 first.
+> 
+> Now that we know how EvilCorp's license keys are structured, we need to to create a key licensed to the user "evilcorp" that we can use to avoid detection. Don't forget to verify it with the debug tools!
 
-[The Agent In Estonia | 180](https://github.com/h4tt/H4TT-3.0/tree/master/crypto/the_agent_in_estonia)
+### [The Agent In Estonia | 180](https://github.com/h4tt/H4TT-3.0/tree/master/crypto/the_agent_in_estonia)
+> One of our FSociety agents was undercover in Estonia in 2017. We haven't heard from him since, and we thought he was KIA. However, we've recently recieved a file with their identity card. Clearly the agent is trying to give us some information, but what is it?
 
 ## evilcorp
-[EC 1: Welcome to Evil Corp | 25](https://github.com/h4tt/H4TT-3.0/tree/master/evilcorp/welcome_to_evil_corp)
+### [EC 1: Welcome to Evil Corp | 25](https://github.com/h4tt/H4TT-3.0/tree/master/evilcorp/welcome_to_evil_corp)
+> You've received a link to Evil Corps website through an anonymous email. Try and see what you can find.
 
-[EC 2: An Interesting Memo | 40](https://github.com/h4tt/H4TT-3.0/tree/master/evilcorp/an_interesting_memo)
+### [EC 2: An Interesting Memo | 40](https://github.com/h4tt/H4TT-3.0/tree/master/evilcorp/an_interesting_memo)
+> Looks like the Evil Corp mole has given us an encrypted file, see if you can't decrypt it.
 
-[EC 3: A Weak Login | 50](https://github.com/h4tt/H4TT-3.0/tree/master/evilcorp/a_weak_login)
+### [EC 3: A Weak Login | 50](https://github.com/h4tt/H4TT-3.0/tree/master/evilcorp/a_weak_login)
+> Looks like the leaked memo might reveal some security vulnerabilities on the login form. See if you can't gain access.
 
-[EC 4: Up and Down We Go | 60](https://github.com/h4tt/H4TT-3.0/tree/master/evilcorp/up_and_down)
+### [EC 4: Up and Down We Go | 60](https://github.com/h4tt/H4TT-3.0/tree/master/evilcorp/up_and_down)
+> Looks like some file is readable that shouldn't be. Go find it.
 
-[EC 5: What Bash? | 70](https://github.com/h4tt/H4TT-3.0/tree/master/evilcorp/what_bash)
+### [EC 5: What Bash? | 70](https://github.com/h4tt/H4TT-3.0/tree/master/evilcorp/what_bash)
+> We need to see what's in /tmp. Try and gain access to those files.
 
-[EC 6: Root of all Evil | 100](https://github.com/h4tt/H4TT-3.0/tree/master/evilcorp/root_of_all_evil)
+### [EC 6: Root of all Evil | 100](https://github.com/h4tt/H4TT-3.0/tree/master/evilcorp/root_of_all_evil)
+> The mole seems to have given us a way to get the last bit of info in /root. See if you can't get access to it.
 
 ## forensics
-[Zed Leppelin | 15](https://github.com/h4tt/H4TT-3.0/tree/master/forensics/zed_leppelin)
+### [Zed Leppelin | 15](https://github.com/h4tt/H4TT-3.0/tree/master/forensics/zed_leppelin)
+> Flag format flag{WORDS_UPPER_CASE}
 
-[Nickleback | 35](https://github.com/h4tt/H4TT-3.0/tree/master/forensics/nickelback)
+### [Nickleback | 35](https://github.com/h4tt/H4TT-3.0/tree/master/forensics/nickelback)
+> We found this Nickleback album on a disgruntled employee's computer. Are they hiding anything?
 
-[A Good View | 40](https://github.com/h4tt/H4TT-3.0/tree/master/forensics/good_view)
+### [A Good View | 40](https://github.com/h4tt/H4TT-3.0/tree/master/forensics/good_view)
+> What a sublime day!
 
-[DOCX | 45](https://github.com/h4tt/H4TT-3.0/tree/master/forensics/docx)
+### [DOCX | 45](https://github.com/h4tt/H4TT-3.0/tree/master/forensics/docx)
+> 
 
-[An Old Way | 63](https://github.com/h4tt/H4TT-3.0/tree/master/forensics/an_old_way)
+### [An Old Way | 63](https://github.com/h4tt/H4TT-3.0/tree/master/forensics/an_old_way)
+> You find yourself in a room with a strip of paper being fed out of a wall and a flashing light. After a time, it stops. On the tape is a sequence of bits traced out. The start and end are smudged. What could they mean? 
+> ...1111111111111111111111100000111111101101011111110010000001001110011011110010110000100000011101000110100001101001011100110010000001101001011100110010000001101110011011110111010000100000011000010111001101100011011010010110100100101110001000001110100000010111110110110010000111101011011011111111100110110110001111111010101101100001111110001101001110110001111111101100011111111011000111010100110110001111111100000001110110111111101100001100100100000010000000000000000000000000000...
+> flag format: flag(UPPER_CASE)
 
-[Hidden with encryption | 80](https://github.com/h4tt/H4TT-3.0/tree/master/forensics/hidden_with_encryption)
+### [Hidden with encryption | 80](https://github.com/h4tt/H4TT-3.0/tree/master/forensics/hidden_with_encryption)
+> I've encrypted this image with a super secret password! You'll never get it open!
+> Fine, I'll give you some information. The image is 1000x1000 and stored in Raw full-byte PPM goodness.
+> You still need more info? Ok, here is the command I used:
+> openssl enc -aes-128-ecb -nosalt -pass REDACTED -in tux.ppm -out image.enc
 
 ## misc
-[Racing the Beam | 40](https://github.com/h4tt/H4TT-3.0/tree/master/misc/racing_the_beam)
+### [Racing the Beam | 40](https://github.com/h4tt/H4TT-3.0/tree/master/misc/racing_the_beam)
+> We intercepted a secret file, but how can anything fit in 24K?!
 
 ## phys
-[Lock Picking 1 | 20](https://github.com/h4tt/H4TT-3.0/tree/master/phys/lock_picking_1)
+### [Lock Picking 1 | 20](https://github.com/h4tt/H4TT-3.0/tree/master/phys/lock_picking_1)
+> Pick the basic locks 1-3
 
-[Lock Picking 2 | 35](https://github.com/h4tt/H4TT-3.0/tree/master/phys/lock_picking_2)
+### [Lock Picking 2 | 35](https://github.com/h4tt/H4TT-3.0/tree/master/phys/lock_picking_2)
+> Pick the basic locks 3-6
 
-[Lock Picking 3 | 40](https://github.com/h4tt/H4TT-3.0/tree/master/phys/lock_picking_3)
+### [Lock Picking 3 | 40](https://github.com/h4tt/H4TT-3.0/tree/master/phys/lock_picking_3)
+> Pick the next 2 locks
 
-[Lock Picking 4 | 45](https://github.com/h4tt/H4TT-3.0/tree/master/phys/lock_picking_4)
+### [Lock Picking 4 | 45](https://github.com/h4tt/H4TT-3.0/tree/master/phys/lock_picking_4)
+> Pick the last 2 locks
 
-[Lock Picking Endgame | 50](https://github.com/h4tt/H4TT-3.0/tree/master/phys/lock_picking_endgame)
+### [Lock Picking Endgame | 50](https://github.com/h4tt/H4TT-3.0/tree/master/phys/lock_picking_endgame)
+> You're almost out, time to just get out of some cuffs
 
 ## pwn
-[Go with the flow | 50](https://github.com/h4tt/H4TT-3.0/tree/master/pwn/go_with_the_flow)
+### [Go with the flow | 50](https://github.com/h4tt/H4TT-3.0/tree/master/pwn/go_with_the_flow)
+> We managed to get restricted access to a box! 
+> 
+> `nc evilcorp.h4tt.ca 9005`
+> 
+> P.S. We managed to get the source to the binary, see the attached file.
 
-[Talk To Me (Part 1) | 60](https://github.com/h4tt/H4TT-3.0/tree/master/pwn/talk_to_me)
+### [Talk To Me (Part 1) | 60](https://github.com/h4tt/H4TT-3.0/tree/master/pwn/talk_to_me)
+> We got into the Evilcorp CEO's family computer. Looks like something important was left lying around.
 
-[You Can Drown in Just 64 Bytes of Data (Part 2) | 65](https://github.com/h4tt/H4TT-3.0/tree/master/pwn/you_can_drown_in_just_64_bytes_of_data)
+### [You Can Drown in Just 64 Bytes of Data (Part 2) | 65](https://github.com/h4tt/H4TT-3.0/tree/master/pwn/you_can_drown_in_just_64_bytes_of_data)
+> The Evilcorp CEO is onto our trick from last time. See if you can extract more secrets.
 
 ## recon
-[C What Now? | 15](https://github.com/h4tt/H4TT-3.0/tree/master/recon/c_what_now)
+### [C What Now? | 15](https://github.com/h4tt/H4TT-3.0/tree/master/recon/c_what_now)
+> What's wrong with CSIS? Can you get the name of this episode?
+> Flag format flag{NAME_UPPER_NO_SYMBOLS}
 
-[Fly Home Kitty! | 35](https://github.com/h4tt/H4TT-3.0/tree/master/recon/fly_home_kitty)
+### [Fly Home Kitty! | 35](https://github.com/h4tt/H4TT-3.0/tree/master/recon/fly_home_kitty)
+> What street does this kitty live on?
+> The flag is in the form flag{STREET_UPPER_CASE}
 
-[And Then it Went Viral | 40](https://github.com/h4tt/H4TT-3.0/tree/master/recon/it_went_viral)
+### [And Then it Went Viral | 40](https://github.com/h4tt/H4TT-3.0/tree/master/recon/it_went_viral)
+> 
 
-[Risking Fizzy Servers | 50](https://github.com/h4tt/H4TT-3.0/tree/master/recon/risking_fizzy_servers)
+### [Risking Fizzy Servers | 50](https://github.com/h4tt/H4TT-3.0/tree/master/recon/risking_fizzy_servers)
+> I'm waiting for a bus right now! Can you figure out what city I'm in?
+> The flag is in the form flag{CITY_UPPER_CASE}
 
-[Sentry Mode Active | 50](https://github.com/h4tt/H4TT-3.0/tree/master/recon/sentry_mode_active)
+### [Sentry Mode Active | 50](https://github.com/h4tt/H4TT-3.0/tree/master/recon/sentry_mode_active)
+> The following video files were recovered from the storage device in a Tesla Model 3
 
 ## rev
-[Mips Is Awesome! | 20](https://github.com/h4tt/H4TT-3.0/tree/master/rev/mips_is_awesome)
+### [Mips Is Awesome! | 20](https://github.com/h4tt/H4TT-3.0/tree/master/rev/mips_is_awesome)
+> Who needs x86 when you have MIPS?
 
-[Christmas | 40](https://github.com/h4tt/H4TT-3.0/tree/master/rev/christmas)
+### [Christmas | 40](https://github.com/h4tt/H4TT-3.0/tree/master/rev/christmas)
+> Can you hear the elves sending out packages?
 
-[Maybe Crypto | 50](https://github.com/h4tt/H4TT-3.0/tree/master/rev/maybe_crypto)
+### [Maybe Crypto | 50](https://github.com/h4tt/H4TT-3.0/tree/master/rev/maybe_crypto)
+> The flag is somewhere in the binary. Can you find it?
 
-[Moving Parts | 60](https://github.com/h4tt/H4TT-3.0/tree/master/rev/moving_parts)
+### [Moving Parts | 60](https://github.com/h4tt/H4TT-3.0/tree/master/rev/moving_parts)
+> Dynamic analysis just got a lot harder. Can you beat the oods?
 
-['Military Grade' Encryption | 100](https://github.com/h4tt/H4TT-3.0/tree/master/rev/military_grade_encryption)
+### ['Military Grade' Encryption | 100](https://github.com/h4tt/H4TT-3.0/tree/master/rev/military_grade_encryption)
+> I lost my flag! Can you help me find it?
 
 ## stego
-[Hard At Work | 35](https://github.com/h4tt/H4TT-3.0/tree/master/stego/hard_at_work)
+### [Hard At Work | 35](https://github.com/h4tt/H4TT-3.0/tree/master/stego/hard_at_work)
+> We've recieved an image of two evilcorp members in a video call. Take a look for any hidden messages
 
-[Djent | 60](https://github.com/h4tt/H4TT-3.0/tree/master/stego/djent)
+### [Djent | 60](https://github.com/h4tt/H4TT-3.0/tree/master/stego/djent)
+> Definition: https://www.youtube.com/watch?v=YTkuJ4vRQZM 
+> Format: flag{example-flag}, lower case, dashes in place of spaces.
 
-[Eye of the Parser | 120](https://github.com/h4tt/H4TT-3.0/tree/master/stego/eye_of_the_parser)
+### [Eye of the Parser | 120](https://github.com/h4tt/H4TT-3.0/tree/master/stego/eye_of_the_parser)
+> We found this strange file but have no idea what's inside it, or even what it is.
 
 ## web
-[Starting at the Source | 10](https://github.com/h4tt/H4TT-3.0/tree/master/web/starting_at_the_source)
+### [Starting at the Source | 10](https://github.com/h4tt/H4TT-3.0/tree/master/web/starting_at_the_source)
+> I think the developers at evilcorp left something accidentally
 
-[Looking Stylish | 15](https://github.com/h4tt/H4TT-3.0/tree/master/web/looking_stylish)
+### [Looking Stylish | 15](https://github.com/h4tt/H4TT-3.0/tree/master/web/looking_stylish)
+> You're looking pretty good today, but maybe a bit off center?
 
-[Report Generator | 20](https://github.com/h4tt/H4TT-3.0/tree/master/web/report_generator)
+### [Report Generator | 20](https://github.com/h4tt/H4TT-3.0/tree/master/web/report_generator)
+> Evil Corp threw up an interesting report generator
 
-[Fast Cookie | 25](https://github.com/h4tt/H4TT-3.0/tree/master/web/fast_cookie)
+### [Fast Cookie | 25](https://github.com/h4tt/H4TT-3.0/tree/master/web/fast_cookie)
+> Can you catch it?
 
-[What is This | 30](https://github.com/h4tt/H4TT-3.0/tree/master/web/what_is_this)
+### [What is This | 30](https://github.com/h4tt/H4TT-3.0/tree/master/web/what_is_this)
+> Evil Corp posted something interesting that needs some deciphering
 
-[The Rabbit Hole | 35](https://github.com/h4tt/H4TT-3.0/tree/master/web/rabbit_hole)
+### [The Rabbit Hole | 35](https://github.com/h4tt/H4TT-3.0/tree/master/web/rabbit_hole)
+> Follow the Rabbit Hole
 
-[Not The Bots You Are Looking For | 50](https://github.com/h4tt/H4TT-3.0/tree/master/web/not_the_bots_you_are_looking_for)
+### [Not The Bots You Are Looking For | 50](https://github.com/h4tt/H4TT-3.0/tree/master/web/not_the_bots_you_are_looking_for)
+> 
 
-[For the Love of Codd | 70](https://github.com/h4tt/H4TT-3.0/tree/master/web/for_the_love_of_codd)
+### [For the Love of Codd | 70](https://github.com/h4tt/H4TT-3.0/tree/master/web/for_the_love_of_codd)
+> It looks like EvilCorp runs personalized web portals for employees to access the contents of their corporate phones. We've got access to one of them - I wonder if there are any secrets in there.
 
-[The Red Pill | 85](https://github.com/h4tt/H4TT-3.0/tree/master/web/the_red_pill)
+### [The Red Pill | 85](https://github.com/h4tt/H4TT-3.0/tree/master/web/the_red_pill)
+> Morpheus has an interesting decision for you Neo.
 

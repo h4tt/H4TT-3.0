@@ -79,6 +79,38 @@ def ScrapeJSON(output):
             data['INTERNAL_PATH'] = file
             categories[thisCat][data['title']] = data
 
+            # Make a deep copy of data
+            thisChallenge = {}
+            for key in data:
+                thisChallenge[key] = data[key]
+
+            # Remove the flag and INTERNAL_PATH from the challenge
+            thisChallenge.pop('flag', None)
+            thisChallenge.pop('INTERNAL_PATH', None)
+
+            # Write a README.md file for each challenge. It should be placed in
+            # the directory above the file, and should put thisJsonFile in code
+            # blocks
+            readme = "# " + thisChallenge['title'] + "\n\n"
+            readme += "## Description\n\n"
+            readme += "```\n"
+            readme += json.dumps(thisChallenge, indent=4)
+            readme += "\n```"
+
+            # Next, open the solution file and add it to the README.md. It's
+            # located up one directory, and then in a directory called
+            # "solution". Make sure that the solution is in a hidden block.
+            solutionFile = os.path.join(os.path.dirname(file), "../", "solution", "solution.txt")
+            if os.path.exists(solutionFile):
+                with open(solutionFile) as solution:
+                    readme += "\n\n## Solution\n\n"
+                    readme += "<details><summary>Click me</summary>"
+                    readme += solution.read()
+                    readme += "</details>"
+
+            with open(os.path.join(os.path.dirname(file), "../", "README.md"), "w") as readmeFile:
+                readmeFile.write(readme)
+
     return categories
 
 def BuildReadme(categories, output):
@@ -103,12 +135,15 @@ def BuildReadme(categories, output):
         
         for challenge in listChallPoints:
             thisChall = categories[thisCat][challenge[1]]
-            output += "[%s | %s](https://github.com/h4tt/H4TT-%s/tree/master/%s/%s)\n\n" % (
+            output += "### [%s | %s](https://github.com/h4tt/H4TT-%s/tree/master/%s/%s)\n" % (
                 thisChall['title'],
                 thisChall['points'],
                 H4TT_VERSION,
                 thisCat,
                 thisChall['INTERNAL_PATH'].split(os.sep)[2]
+            )
+            output += "> %s\n\n" % (
+                thisChall['description'].replace('\n', '\n> '),
             )
 
     print(str(totalPoints) + " points total")
@@ -267,6 +302,7 @@ def BuildCTFd(categories):
 if __name__ == "__main__":
     CleanFolders()
     categories = ScrapeJSON(output)
+    # print(categories)
     output = BuildReadme(categories, output)
     BuildCTFd(categories)
 

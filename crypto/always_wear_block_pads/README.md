@@ -1,0 +1,101 @@
+# Always Wear Block Pads (Part 1)
+
+## Description
+
+```
+{
+    "title": "Always Wear Block Pads (Part 1)",
+    "category": "crypto",
+    "description": "We obtained access to EvilCorp's debug tools for product keys. See if you can decipher their internal representation.",
+    "link": "https://evilcorp.h4tt.ca/license",
+    "points": "150",
+    "max_tries": "99",
+    "active": "0",
+    "files": [],
+    "author": "Matt Penny",
+    "instructions": "The nodejs challenge server needs to be hosted somewhere"
+}
+```
+
+## Solution
+
+<details><summary>Click me</summary>"License keys" are just text encrypted using AES256 in CBC mode with a random key and
+IV. The IV is prepended to the ciphertext and then the result is hex encoded. This can
+be surmised by the error messages returned when invalid inputs are entered:
+  * The input must be a multiple of 16 bytes (AES block size)
+  * Verification will complain about invalid final block length if it is not 16
+  * Decryption failure outputs the exact error to make the challenge easier. The error
+    message can be easily searched online
+
+For this challenge, the block cipher itself (AES) is irrelevant other than the
+fact that it defines the block size (16). Recall that CBC mode works by first
+XORing the current plaintext block with the previous ciphertext block and then
+encrypting:
+
+	C[i] = Enc(P[i] XOR C[i-1])
+
+Decryption works similarly:
+
+	P[i] = Dec(C[i]) XOR C[i-1]
+
+(C[0] is the initialization vector)
+
+If a plaintext block is not a multiple of the block size, it is padded using PKCS#7
+(the value to pad with is equal to the number of bytes required). If the block _is_ a
+multiple of the block size, a block made of entirely padding is appended (in order to
+properly strip padding away during decryption).
+
+The license key verifier acts as a *padding oracle* - it can be used to distinguish
+between properly and improperly padded plaintext since different error messages are
+displayed if the _padding_ is incorrect versus if the _message_ is incorrect (the
+challenge server classifies a license key as "correct" if its decryption begins with
+"secret=FLAG"). We can use this to decrypt the entire message (and encrypt arbitrary
+messages too)!
+
+For any 2 blocks blk0 and blk1:
+  1) Run through every possible value for the final byte (n) of blk0 until the
+     server does not report the padding error message ("bad decrypt"). This
+     indicates that Dec(blk1[n]) XOR blk0[n] = 1 (one byte of padding).
+
+     Note: It is possible (although unlikely) to have false positives (e.g., Dec(blk1)
+     ends in 2 2) but these can be ruled out by modifying the second last byte and then
+     submitting to the server once more. If there is a padding error this time then it
+     was a false positive and the modification corrupted the second-last padding byte.
+     Otherwise the first guess was correct.
+
+  2) Now we know that
+
+        Dec(blk1[n]) XOR new_blk0[n] = 1
+
+     which can be rearranged to get Dec(blk1)[n]:
+
+        Dec(blk1)[n] = 1 XOR new_blk0[n]
+
+     Finally, we can recover byte n of the plaintext by using the CBC decryption formula:
+
+        Plaintext[n] = Dec(blk1)[n] XOR blk0[n]
+
+  3) Repeat steps (2) and (3) for bytes n-1, n-2, etc. until blk1 is fully decrypted.
+     After each iteration, blk0 must be updated such that the bytes of the plaintext
+     that were already processed are incremented to the next padding byte (set
+     Plaintext[n] to 2 before working on byte n-1, set Plaintext[n-1 ... n] to 3 before
+     working on byte n-2, etc.).
+
+     Influencing a byte of the plaintext is easy once we have decrypted it:
+
+        Plaintext[i] = Dec(blk1)[i] XOR blk0[i]
+
+     so
+
+        new_blk0[i] = Plaintext[i] XOR blk0[i] XOR desired_value
+
+  4) Repeat steps (1) to (3) for each block of the ciphertext
+
+
+Automated tools also exist to do this.
+
+Generate a "debug key" and decrypt it using the padding oracle to get the flag. The debug
+key is "secret=flag{s3rge_wou1d_b3_pr0ud};user=evilcorp" and thus the flag is:
+
+flag{s3rge_wou1d_b3_pr0ud}
+</details>

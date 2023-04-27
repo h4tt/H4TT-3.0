@@ -1,0 +1,27 @@
+# EC 1: Welcome to Evil Corp
+
+## Description
+
+```
+{
+    "title": "EC 1: Welcome to Evil Corp",
+    "category": "evilcorp",
+    "description": "You've received a link to Evil Corps website through an anonymous email. Try and see what you can find.",
+    "link": "https://evilcorp.h4tt.ca",
+    "hint": "01001101 01110010 00100000 01010010 01101111 01100010 01101111 01110100 01101111",
+    "points": "25",
+    "max_tries": "99",
+    "active": "0",
+    "files": [
+        ""
+    ],
+    "author": "Francisco Trindade"
+}
+```
+
+## Solution
+
+<details><summary>Click me</summary>If users navigate to <link>/robots.txt. They'll find one dissalowed url. Navigating to /s3cr3ts they'll find a message and the flag.
+
+flag{r0b075_m155_fun_d1r5}
+</details>

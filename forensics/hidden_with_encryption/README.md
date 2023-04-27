@@ -1,0 +1,38 @@
+# Hidden with encryption
+
+## Description
+
+```
+{
+    "title": "Hidden with encryption",
+    "category": "forensics",
+    "description": "I've encrypted this image with a super secret password! You'll never get it open!\nFine, I'll give you some information. The image is 1000x1000 and stored in Raw full-byte PPM goodness.\nYou still need more info? Ok, here is the command I used:\nopenssl enc -aes-128-ecb -nosalt -pass REDACTED -in tux.ppm -out image.enc",
+    "link": "",
+    "points": "80",
+    "max_tries": "99",
+    "active": "0",
+    "files": [
+        "image.enc"
+    ],
+    "author": "Forest Anderson"
+}
+```
+
+## Solution
+
+<details><summary>Click me</summary>The image was encrypted with AES ECB, you can read about the technique here: https://blog.filippo.io/the-ecb-penguin/
+The code that was used to encrypt was similar, with only the password being changed:
+
+head -n 4 tux.ppm > header.txt
+openssl enc -aes-128-ecb -nosalt -pass pass:"asdhfaasdfjljhqj234k5j234g" -in tux.ppm -out image.enc
+
+First you need to rebuild the header. You can learn about the PPM format here: http://paulbourke.net/dataformats/ppm/
+The challenge description gives the hint to use P6 with mention of "Raw", 255 colour with "full-byte", and the dimensions. This is enough to create a header.txt file.
+
+Then, concatinate the header with the encrypted image:
+cat header.txt image.enc > tux.enc.ppm
+
+And you can see the flag in tux.enc.ppm
+
+flag{the_walls_are_ecb}
+</details>
