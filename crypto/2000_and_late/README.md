@@ -2,7 +2,7 @@
 
 ## Description
 
-```
+```json
 {
     "title": "So Two Thousand and Late",
     "category": "crypto",
@@ -15,11 +15,3 @@
     "author": "Dave Petrasovic"
 }
 ```
-
-## Solution
-
-<details><summary>Click me</summary>The numbers are actually just how you would type the flag out using T9 (before QWERTY keyboards on phones)
-Can be solved with: https://www.dcode.fr/t9-cipher
-
-flag{back_to_the_old_school}
-</details>

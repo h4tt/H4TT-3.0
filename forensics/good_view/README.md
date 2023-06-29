@@ -2,7 +2,7 @@
 
 ## Description
 
-```
+```json
 {
     "title": "A Good View",
     "category": "forensics",
@@ -17,10 +17,3 @@
     "author": "Matt Langois"
 }
 ```
-
-## Solution
-
-<details><summary>Click me</summary>The bitmap header has been corrupted/modified (the size at byte 0x20 has been changed)
-
-flag{you_fixed_the_header}
-</details>

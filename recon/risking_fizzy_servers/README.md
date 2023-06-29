@@ -2,7 +2,7 @@
 
 ## Description
 
-```
+```json
 {
     "title": "Risking Fizzy Servers",
     "category": "recon",
@@ -17,9 +17,3 @@
     "author": "Forest Anderson"
 }
 ```
-
-## Solution
-
-<details><summary>Click me</summary>The 3 word title of this challenge can be used as a location on map.what3words.com, as risking.fizzy.servers.
-
-flag{OSLO}</details>

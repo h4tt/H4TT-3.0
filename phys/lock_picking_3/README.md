@@ -2,7 +2,7 @@
 
 ## Description
 
-```
+```json
 {
     "title": "Lock Picking 3",
     "category": "phys",

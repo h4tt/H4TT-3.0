@@ -2,7 +2,7 @@
 
 ## Description
 
-```
+```json
 {
     "title": "The Rabbit Hole",
     "category": "web",
@@ -19,12 +19,3 @@
     "author": "Francisco Trindade"
 }
 ```
-
-## Solution
-
-<details><summary>Click me</summary>Essentially this is a fruitless and long effort going through manually. Best to create a script to scrape and recursively check each page until you find the flag!
-
-The solution code is: 122121222102
-
-Flag: flag{7hr0u6h_7h3_l00k1n6_6l455}
-</details>

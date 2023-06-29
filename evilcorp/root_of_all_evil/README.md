@@ -2,7 +2,7 @@
 
 ## Description
 
-```
+```json
 {
     "title": "EC 6: Root of all Evil",
     "category": "evilcorp",
@@ -19,10 +19,3 @@
     "author": "Francisco Trindade"
 }
 ```
-
-## Solution
-
-<details><summary>Click me</summary>Assuming you have a proper unrestricted bash shell. Typing `sudo -l` will reveal that the user can run `hexdump` as sudo without a password. Running `hexdump -C /root/flag.txt` (or a potential variation) will print out he final message and flag.
-
-Flag: flag{5ud0_15_p0w3rful}
-</details>

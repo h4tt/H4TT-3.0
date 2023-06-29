@@ -2,7 +2,7 @@
 
 ## Description
 
-```
+```json
 {
     "title": "Djent",
     "category": "stego",
@@ -17,10 +17,3 @@
     "author": "Dave Petrasovic"
 }
 ```
-
-## Solution
-
-<details><summary>Click me</summary>By listening to the djent track, the rhythm can be interpreted as Morse Code.
-This can be made easier by using audacity to select and play on character at a time.
-
-flag{sooo-djent}</details>

@@ -2,7 +2,7 @@
 
 ## Description
 
-```
+```json
 {
     "title": "EC 1: Welcome to Evil Corp",
     "category": "evilcorp",
@@ -18,10 +18,3 @@
     "author": "Francisco Trindade"
 }
 ```
-
-## Solution
-
-<details><summary>Click me</summary>If users navigate to <link>/robots.txt. They'll find one dissalowed url. Navigating to /s3cr3ts they'll find a message and the flag.
-
-flag{r0b075_m155_fun_d1r5}
-</details>

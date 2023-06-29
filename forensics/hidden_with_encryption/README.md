@@ -2,7 +2,7 @@
 
 ## Description
 
-```
+```json
 {
     "title": "Hidden with encryption",
     "category": "forensics",
@@ -17,22 +17,3 @@
     "author": "Forest Anderson"
 }
 ```
-
-## Solution
-
-<details><summary>Click me</summary>The image was encrypted with AES ECB, you can read about the technique here: https://blog.filippo.io/the-ecb-penguin/
-The code that was used to encrypt was similar, with only the password being changed:
-
-head -n 4 tux.ppm > header.txt
-openssl enc -aes-128-ecb -nosalt -pass pass:"asdhfaasdfjljhqj234k5j234g" -in tux.ppm -out image.enc
-
-First you need to rebuild the header. You can learn about the PPM format here: http://paulbourke.net/dataformats/ppm/
-The challenge description gives the hint to use P6 with mention of "Raw", 255 colour with "full-byte", and the dimensions. This is enough to create a header.txt file.
-
-Then, concatinate the header with the encrypted image:
-cat header.txt image.enc > tux.enc.ppm
-
-And you can see the flag in tux.enc.ppm
-
-flag{the_walls_are_ecb}
-</details>

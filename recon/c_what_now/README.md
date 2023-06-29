@@ -2,7 +2,7 @@
 
 ## Description
 
-```
+```json
 {
     "title": "C What Now?",
     "category": "recon",
@@ -17,10 +17,3 @@
     "author": "Forest Anderson"
 }
 ```
-
-## Solution
-
-<details><summary>Click me</summary>The show is Stargate Atlantis, and the episode is "Miller's Crossing"
-
-flag{MILLERS_CROSSING}
-</details>

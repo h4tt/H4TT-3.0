@@ -2,7 +2,7 @@
 
 ## Description
 
-```
+```json
 {
     "title": "What is This",
     "category": "web",
@@ -19,10 +19,3 @@
     "author": "Francisco Trindade"
 }
 ```
-
-## Solution
-
-<details><summary>Click me</summary>The text is actually JSFuck http://www.jsfuck.com/. However you can simply copy it and paste it into the console as it is valid javascript. Or run it in node.
-
-Flag: flag{175_v4l1d_j5}
-</details>

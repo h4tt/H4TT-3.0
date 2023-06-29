@@ -2,7 +2,7 @@
 
 ## Description
 
-```
+```json
 {
     "title": "Report Generator",
     "category": "web",
@@ -19,10 +19,3 @@
     "author": "Francisco Trindade"
 }
 ```
-
-## Solution
-
-<details><summary>Click me</summary>The name field is suseptible to XSS. You can get the flag if you submit anything in that field of the form "<script>{something}</script>"
-
-Flag: flag{x55_m34n5_n0_v4l1d4710n}
-</details>

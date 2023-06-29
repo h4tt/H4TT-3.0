@@ -2,7 +2,7 @@
 
 ## Description
 
-```
+```json
 {
     "title": "Hard At Work",
     "category": "stego",
@@ -17,9 +17,3 @@
     "author": "Matt Langois"
 }
 ```
-
-## Solution
-
-<details><summary>Click me</summary>There is a second image appended to the first. You can see it with binwalk. If you run `binwalk --dd=".*" challenge.jpg` you can extract all of the files.
-
-flag{well_hello_there}</details>

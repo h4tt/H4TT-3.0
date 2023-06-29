@@ -93,14 +93,14 @@ def ScrapeJSON(output):
             # blocks
             readme = "# " + thisChallenge['title'] + "\n\n"
             readme += "## Description\n\n"
-            readme += "```\n"
+            readme += "```json\n"
             readme += json.dumps(thisChallenge, indent=4)
-            readme += "\n```"
+            readme += "\n```\n"
 
             # Next, open the solution file and add it to the README.md. It's
             # located up one directory, and then in a directory called
             # "solution". Make sure that the solution is in a hidden block.
-            solutionFile = os.path.join(os.path.dirname(file), "../", "solution", "solution.txt")
+            solutionFile = os.path.join(os.path.dirname(file), "../", "solution.txt")
             if os.path.exists(solutionFile):
                 with open(solutionFile) as solution:
                     readme += "\n\n## Solution\n\n"
@@ -108,7 +108,7 @@ def ScrapeJSON(output):
                     readme += solution.read()
                     readme += "</details>"
 
-            with open(os.path.join(os.path.dirname(file), "../", "README.md"), "w") as readmeFile:
+            with open(os.path.join(os.path.dirname(file), "README.md"), "w") as readmeFile:
                 readmeFile.write(readme)
 
     return categories
@@ -307,7 +307,7 @@ if __name__ == "__main__":
     categories = ScrapeJSON(output)
     # print(categories)
     output = BuildReadme(categories, output)
-    BuildCTFd(categories)
+    # BuildCTFd(categories)
 
     text_file = open("README.md", "w")
     text_file.write(output)

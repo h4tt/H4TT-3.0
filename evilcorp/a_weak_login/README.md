@@ -2,7 +2,7 @@
 
 ## Description
 
-```
+```json
 {
     "title": "EC 3: A Weak Login",
     "category": "evilcorp",
@@ -19,14 +19,3 @@
     "author": "Francisco Trindade"
 }
 ```
-
-## Solution
-
-<details><summary>Click me</summary>In the top secret markdown document contained in the ZIP file the hint to "knock on the post-mans door before logging in" is to point towards making a POST request to `/evilcorp-login`. You'll receive back:
-
-Here's your cookie: {"admin":"e2lzY29ycGFkbWluOiBmYWxzZX0K="}
-
-Then base64 decode the value of the json file will return "{iscorpadmin: false}". The next step is to then base64 encode "{iscorpadmin: true}". Which encode to e2lzY29ycGFkbWluOiB0cnVlfQo=. Then injecting the cookie: {"admin": "e2lzY29ycGFkbWluOiB0cnVlfQo="} and putt ing in any username/password combo will result in getting accepted and redirecting to "/evilcorp-home?file=listing". Click on the file "flag.txt" will reveal the flag.
-
-Flag: flag{wh0_n33d5_l061n_cr3d5}
-</details>

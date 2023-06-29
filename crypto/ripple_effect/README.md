@@ -2,7 +2,7 @@
 
 ## Description
 
-```
+```json
 {
     "title": "The Ripple Effect",
     "category": "crypto",
@@ -17,9 +17,3 @@
     "author": "Forest Anderson"
 }
 ```
-
-## Solution
-
-<details><summary>Click me</summary>This is a ciphertext encoded in base58. It uses the same alphabet at the Ripple cryptocurrency. It can be quite easily decoded on cyberchef.
-
-flag{n0t_s0_4mb1gu0us}</details>

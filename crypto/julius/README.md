@@ -2,7 +2,7 @@
 
 ## Description
 
-```
+```json
 {
     "title": "Julius",
     "category": "crypto",
@@ -17,10 +17,3 @@
     "author": "Forest Anderson"
 }
 ```
-
-## Solution
-
-<details><summary>Click me</summary>This is a classic Caesar cipher, if each letter is rotated 9 forward, it will yield the flag.
-
-flag{et_tu_brut3}
-</details>

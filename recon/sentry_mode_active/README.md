@@ -2,7 +2,7 @@
 
 ## Description
 
-```
+```json
 {
     "title": "Sentry Mode Active",
     "category": "recon",
@@ -17,11 +17,3 @@
     "author": "Dave Petrasovic"
 }
 ```
-
-## Solution
-
-<details><summary>Click me</summary>reviewing the dashcam footage from the Tesla, you should be able to determine
-where the Tesla is parked. Walking over to it and looking in the window,
-you will see the flag
-
-FLAG{SHORT_SQUEEZE}</details>

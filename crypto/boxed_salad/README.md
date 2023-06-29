@@ -2,7 +2,7 @@
 
 ## Description
 
-```
+```json
 {
     "title": "Boxed Salad",
     "category": "crypto",
