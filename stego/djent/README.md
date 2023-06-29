@@ -5,7 +5,6 @@
 ```json
 {
     "title": "Djent",
-    "category": "stego",
     "description": "Definition: https://www.youtube.com/watch?v=YTkuJ4vRQZM \nFormat: flag{example-flag}, lower case, dashes in place of spaces.",
     "link": "",
     "points": 60,

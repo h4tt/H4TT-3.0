@@ -5,7 +5,6 @@
 ```json
 {
     "title": "Nickleback",
-    "category": "forensics",
     "description": "We found this Nickleback album on a disgruntled employee's computer. Are they hiding anything?",
     "link": "",
     "points": 35,

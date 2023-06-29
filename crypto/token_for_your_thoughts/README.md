@@ -5,7 +5,6 @@
 ```json
 {
     "title": "Token for your Thoughts",
-    "category": "crypto",
     "description": "We got word that Evilcorp is trying out a new authentication mechanism. It's pretty new and untested so I doubt it's secure. See if you can break it.",
     "link": "https://evilcorp.h4tt.ca/evilcorp-login",
     "points": 40,

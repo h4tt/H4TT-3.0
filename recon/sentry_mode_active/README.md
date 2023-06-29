@@ -5,7 +5,6 @@
 ```json
 {
     "title": "Sentry Mode Active",
-    "category": "recon",
     "description": "The following video files were recovered from the storage device in a Tesla Model 3",
     "link": "",
     "points": 50,

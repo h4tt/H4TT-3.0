@@ -5,7 +5,6 @@
 ```json
 {
     "title": "Lock Picking 4",
-    "category": "phys",
     "description": "Pick the last 2 locks",
     "link": "",
     "points": 45,

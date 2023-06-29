@@ -5,7 +5,6 @@
 ```json
 {
     "title": "Mips Is Awesome!",
-    "category": "rev",
     "description": "Who needs x86 when you have MIPS?",
     "link": "",
     "points": 20,

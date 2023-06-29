@@ -5,7 +5,6 @@
 ```json
 {
     "title": "And Then it Went Viral",
-    "category": "recon",
     "description": "",
     "link": "",
     "points": 40,

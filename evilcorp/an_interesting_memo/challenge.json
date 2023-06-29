@@ -1,6 +1,5 @@
 {
     "title": "EC 2: An Interesting Memo",
-    "category": "evilcorp",
     "description": "Looks like the Evil Corp mole has given us an encrypted file, see if you can't decrypt it.",
     "hint": "Ever built a dictionary?",
     "link": "https://evilcorp.h4tt.ca",

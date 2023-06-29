@@ -5,7 +5,6 @@
 ```json
 {
     "title": "'Military Grade' Encryption",
-    "category": "rev",
     "description": "I lost my flag! Can you help me find it?",
     "link": "",
     "points": 100,

@@ -5,7 +5,6 @@
 ```json
 {
     "title": "Report Generator",
-    "category": "web",
     "description": "Evil Corp threw up an interesting report generator",
     "hint": "The name field looks pretty interesting",
     "link": "https://evilcorp.h4tt.ca/generate-report",

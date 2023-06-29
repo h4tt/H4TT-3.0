@@ -5,7 +5,6 @@
 ```json
 {
     "title": "DOCX",
-    "category": "forensics",
     "description": "",
     "link": "",
     "points": 45,

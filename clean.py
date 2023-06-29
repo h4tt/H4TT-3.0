@@ -71,7 +71,8 @@ def ScrapeJSON(output):
 
         with open(file) as thisJsonFile:
             data = json.load(thisJsonFile)
-            thisCat = data['category'].lower()
+            # Get the category from the first part of the path
+            thisCat = file.split(os.sep)[1].lower()
 
             if thisCat not in categories:
                 categories[thisCat] = {}
