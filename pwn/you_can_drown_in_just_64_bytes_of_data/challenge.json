@@ -5,9 +5,6 @@
     "link": "",
     "points": "65",
     "flag": "flag{g0nna_n33d_4_p1ung3r}",
-    "max_tries": "99",
-    "active": "0",
-    "files": [
-    ],
+    "active": true,
     "author": "Matt Penny"
 }

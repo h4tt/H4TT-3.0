@@ -9,9 +9,7 @@
     "description": "2225086084306530724665\n\nformat: flag{deciphered_text_lower-case_with_underscores_for_spaces}",
     "link": "",
     "points": "30",
-    "max_tries": "99",
-    "active": "0",
-    "files": [],
+    "active": true,
     "author": "Dave Petrasovic"
 }
 ```

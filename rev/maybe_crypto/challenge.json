@@ -5,10 +5,6 @@
     "link": "",
     "points": "50",
     "flag": "flag{r3v_0r_crypt0}",
-    "max_tries": "99",
-    "active": "0",
-    "files": [
-        "challenge"
-    ],
+    "active": true,
     "author": "Sean Maher"
-  }
+}

@@ -6,12 +6,7 @@
     "link": "https://evilcorp.h4tt.ca",
     "points": "40",
     "flag": "flag{c4p741n_crunch}",
-    "max_tries": "99",
-    "active": "0",
-    "files": [
-        ""
-
-    ],
+    "active": true,
     "required": "EC 1: Welcome to Evil Corp",
     "author": "Francisco Trindade"
 }

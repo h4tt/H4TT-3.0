@@ -6,11 +6,7 @@
     "link": "https://evilcorp.h4tt.ca",
     "points": "50",
     "flag": "flag{wh0_n33d5_l061n_cr3d5}",
-    "max_tries": "99",
-    "active": "0",
-    "files": [
-        ""
-    ],
+    "active": true,
     "required": "EC 2: An Interesting Memo",
     "author": "Francisco Trindade"
 }

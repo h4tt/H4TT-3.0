@@ -5,9 +5,6 @@
   "link": "",
   "points": "50",
   "flag": "FLAG{MMMM-BACON}",
-  "max_tries": "99",
-  "active": "0",
-  "files": [
-  ],
+  "active": true,
   "author": "Dave Petrasovic"
 }

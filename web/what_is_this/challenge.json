@@ -6,11 +6,7 @@
     "link": "https://evilcorp.h4tt.ca/what-is-this",
     "points": "30",
     "flag": "flag{175_v4l1d_j5}",
-    "max_tries": "99",
-    "active": "0",
-    "files": [
-        ""
-    ],
+    "active": true,
     "required": "",
     "author": "Francisco Trindade"
 }

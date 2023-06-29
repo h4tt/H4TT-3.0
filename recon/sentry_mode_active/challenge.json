@@ -5,10 +5,6 @@
     "link": "",
     "points": "50",
     "flag": "FLAG{SHORT_SQUEEZE}",
-    "max_tries": "99",
-    "active": "0",
-    "files": [
-        "2019-11-09.zip"
-    ],
+    "active": true,
     "author": "Dave Petrasovic"
-  }
+}

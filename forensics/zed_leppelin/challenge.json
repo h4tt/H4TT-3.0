@@ -5,10 +5,6 @@
     "link": "",
     "points": "15",
     "flag": "flag{DEVIL_IN_REWIND}",
-    "max_tries": "99",
-    "active": "0",
-    "files": [
-        ""
-    ],
+    "active": true,
     "author": "Forest Anderson"
-  }
+}

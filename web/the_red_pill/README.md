@@ -10,11 +10,7 @@
     "hint": "alg is an interesting jwt payload header.",
     "link": "https://evilcorp.h4tt.ca/the-red-pill",
     "points": "85",
-    "max_tries": "99",
-    "active": "0",
-    "files": [
-        ""
-    ],
+    "active": true,
     "required": "",
     "author": "Francisco Trindade"
 }

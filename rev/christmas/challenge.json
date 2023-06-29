@@ -5,10 +5,6 @@
     "link": "",
     "points": "40",
     "flag": "flag{p4ck1ng_1s_n0t_crypt0}",
-    "max_tries": "99",
-    "active": "0",
-    "files": [
-        "challenge.exe"
-    ],
+    "active": true,
     "author": "Sean Maher"
-  }
+}

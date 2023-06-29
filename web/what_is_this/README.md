@@ -10,11 +10,7 @@
     "hint": "esolang",
     "link": "https://evilcorp.h4tt.ca/what-is-this",
     "points": "30",
-    "max_tries": "99",
-    "active": "0",
-    "files": [
-        ""
-    ],
+    "active": true,
     "required": "",
     "author": "Francisco Trindade"
 }

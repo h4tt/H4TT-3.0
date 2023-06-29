@@ -10,11 +10,7 @@
     "hint": "ctrl+shift+i",
     "link": "https://evilcorp.h4tt.ca/",
     "points": "10",
-    "max_tries": "99",
-    "active": "0",
-    "files": [
-        ""
-    ],
+    "active": true,
     "required": "",
     "author": "Francisco Trindade"
 }

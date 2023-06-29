@@ -5,10 +5,6 @@
     "link": "",
     "points": "120",
     "flag": "flag{g3t_4head3r}",
-    "max_tries": "99",
-    "active": "0",
-    "files": [
-        "Challenge.zip"
-    ],
+    "active": true,
     "author": "Matt Penny"
 }

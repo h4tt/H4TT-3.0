@@ -9,11 +9,7 @@
     "description": "wcrx{vk_kl_silk3}",
     "link": "",
     "points": "10",
-    "max_tries": "99",
-    "active": "0",
-    "files": [
-        ""
-    ],
+    "active": true,
     "author": "Forest Anderson"
 }
 ```

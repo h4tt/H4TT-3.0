@@ -5,10 +5,6 @@
     "link": "https://evilcorp.h4tt.ca",
     "points": "15",
     "flag": "flag{l00ks_lik3_art}",
-    "max_tries": "99",
-    "active": "0",
-    "files": [
-        ""
-    ],
+    "active": true,
     "author": "Forest Anderson"
-  }
+}

@@ -10,11 +10,7 @@
     "hint": "You can GET an HTTP page but also XXXX an HTTP page.",
     "link": "https://evilcorp.h4tt.ca",
     "points": "50",
-    "max_tries": "99",
-    "active": "0",
-    "files": [
-        ""
-    ],
+    "active": true,
     "required": "EC 2: An Interesting Memo",
     "author": "Francisco Trindade"
 }

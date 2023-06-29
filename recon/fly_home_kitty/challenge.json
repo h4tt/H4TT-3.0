@@ -5,10 +5,6 @@
     "link": "",
     "points": "35",
     "flag": "flag{SENECA}",
-    "max_tries": "99",
-    "active": "0",
-    "files": [
-        "flying-kitty.png"
-    ],
+    "active": true,
     "author": "Forest Anderson"
-  }
+}

@@ -5,9 +5,6 @@
   "link": "",
   "points": "50",
   "flag": "flag{s3cur1ty_thr0ugh_0b5cur1ty_h4s_dr4wb4ck5}",
-  "max_tries": "99",
-  "active": "0",
-  "files": [
-  ],
+  "active": true,
   "author": "Dave Petrasovic"
 }

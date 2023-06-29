@@ -9,11 +9,7 @@
     "description": "Pick the next 2 locks",
     "link": "",
     "points": "40",
-    "max_tries": "99",
-    "active": "0",
-    "files": [
-        ""
-    ],
+    "active": true,
     "required": "Lock Picking 2",
     "author": "Forest Anderson"
 }

@@ -5,10 +5,6 @@
     "link": "",
     "points": "10",
     "flag": "flag{et_tu_brut3}",
-    "max_tries": "99",
-    "active": "0",
-    "files": [
-        ""
-    ],
+    "active": true,
     "author": "Forest Anderson"
-  }
+}

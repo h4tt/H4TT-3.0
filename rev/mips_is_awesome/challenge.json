@@ -5,10 +5,6 @@
     "link": "",
     "points": "20",
     "flag": "flag{unkn0wn_pl4tf0rm}",
-    "max_tries": "99",
-    "active": "0",
-    "files": [
-        "mips_is_awesome"
-    ],
+    "active": true,
     "author": "Matt Langois"
-  }
+}

@@ -1,4 +1,3 @@
-
 {
     "title": "EC 4: Up and Down We Go",
     "category": "evilcorp",
@@ -7,11 +6,7 @@
     "link": "https://evilcorp.h4tt.ca",
     "points": "60",
     "flag": "flag{f0ll0w_7h3_r4bb17_n30}",
-    "max_tries": "99",
-    "active": "0",
-    "files": [
-        ""
-    ],
+    "active": true,
     "required": "EC 3: A Weak Login",
     "author": "Francisco Trindade"
 }

@@ -9,11 +9,7 @@
     "description": "What's wrong with CSIS? Can you get the name of this episode?\nFlag format flag{NAME_UPPER_NO_SYMBOLS}",
     "link": "",
     "points": "15",
-    "max_tries": "99",
-    "active": "0",
-    "files": [
-        "csis.mp4"
-    ],
+    "active": true,
     "author": "Forest Anderson"
 }
 ```

@@ -5,11 +5,7 @@
     "link": "",
     "points": "50",
     "flag": "flag{made_it_out_alive}",
-    "max_tries": "99",
-    "active": "0",
-    "files": [
-        ""
-    ],
+    "active": true,
     "required": "Lock Picking 4",
     "author": "Forest Anderson"
-  }
+}

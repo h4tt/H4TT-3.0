@@ -5,10 +5,7 @@
     "link": "https://evilcorp.h4tt.ca/license",
     "points": "175",
     "flag": "flag{wh3r3_4re_th3_ch1ptune5}",
-    "max_tries": "99",
-    "active": "0",
-    "files": [
-    ],
+    "active": true,
     "author": "Matt Penny",
     "instructions": "Link to the same challenge server as in always_wear_block_pads"
 }

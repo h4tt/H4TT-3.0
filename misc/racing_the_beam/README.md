@@ -9,11 +9,7 @@
     "description": "We intercepted a secret file, but how can anything fit in 24K?!",
     "link": "",
     "points": "40",
-    "max_tries": "99",
-    "active": "0",
-    "files": [
-        "hack"
-    ],
+    "active": true,
     "author": "Matt Penny"
 }
 ```

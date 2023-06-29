@@ -10,11 +10,7 @@
     "hint": "PATH is a cool variable",
     "link": "https://evilcorp.h4tt.ca",
     "points": "70",
-    "max_tries": "99",
-    "active": "0",
-    "files": [
-        ""
-    ],
+    "active": true,
     "required": "EC 4: Up and Down We Go",
     "author": "Francisco Trindade"
 }

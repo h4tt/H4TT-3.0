@@ -6,11 +6,7 @@
     "link": "https://evilcorp.h4tt.ca/rabbit-hole",
     "points": "35",
     "flag": "flag{7hr0u6h_7h3_l00k1n6_6l455}",
-    "max_tries": "99",
-    "active": "0",
-    "files": [
-        ""
-    ],
+    "active": true,
     "required": "",
     "author": "Francisco Trindade"
 }

@@ -5,10 +5,6 @@
     "link": "",
     "points": "20",
     "flag": "flag{i_picked_number_1_to_three}",
-    "max_tries": "99",
-    "active": "0",
-    "files": [
-        ""
-    ],
+    "active": true,
     "author": "Forest Anderson"
-  }
+}

@@ -5,10 +5,6 @@
     "link": "",
     "points": "63",
     "flag": "flag(I-R3AD-PUNCH-TAP3)",
-    "max_tries": "99",
-    "active": "0",
-    "files": [
-        ""
-    ],
+    "active": true,
     "author": "Griffin"
-  }
+}

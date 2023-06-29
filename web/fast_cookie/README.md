@@ -10,11 +10,7 @@
     "hint": "____ shoulders, knees and toes!",
     "link": "https://evilcorp.h4tt.ca/fast-cookie",
     "points": "25",
-    "max_tries": "99",
-    "active": "0",
-    "files": [
-        ""
-    ],
+    "active": true,
     "required": "",
     "author": "Francisco Trindade"
 }

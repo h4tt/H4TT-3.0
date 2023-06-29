@@ -5,10 +5,6 @@
     "link": "",
     "points": "15",
     "flag": "flag{MILLERS_CROSSING}",
-    "max_tries": "99",
-    "active": "0",
-    "files": [
-        "csis.mp4"
-    ],
+    "active": true,
     "author": "Forest Anderson"
-  }
+}

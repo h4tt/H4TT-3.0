@@ -9,9 +9,7 @@
     "description": "",
     "link": "https://evilcorp.h4tt.ca/neon",
     "points": "50",
-    "max_tries": "99",
-    "active": "0",
-    "files": [],
+    "active": true,
     "author": "Dave Petrasovic",
     "instructions": "Run the node app."
 }

@@ -10,11 +10,7 @@
     "link": "https://evilcorp.h4tt.ca",
     "hint": "01001101 01110010 00100000 01010010 01101111 01100010 01101111 01110100 01101111",
     "points": "25",
-    "max_tries": "99",
-    "active": "0",
-    "files": [
-        ""
-    ],
+    "active": true,
     "author": "Francisco Trindade"
 }
 ```

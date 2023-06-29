@@ -9,11 +9,7 @@
     "description": "The flag is somewhere in the binary. Can you find it?",
     "link": "",
     "points": "50",
-    "max_tries": "99",
-    "active": "0",
-    "files": [
-        "challenge"
-    ],
+    "active": true,
     "author": "Sean Maher"
 }
 ```

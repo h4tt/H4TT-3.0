@@ -9,9 +9,7 @@
     "description": "The Evilcorp CEO is onto our trick from last time. See if you can extract more secrets.",
     "link": "",
     "points": "65",
-    "max_tries": "99",
-    "active": "0",
-    "files": [],
+    "active": true,
     "author": "Matt Penny"
 }
 ```

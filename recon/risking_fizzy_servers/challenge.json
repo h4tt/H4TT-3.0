@@ -5,10 +5,6 @@
     "link": "",
     "points": "50",
     "flag": "flag{OSLO}",
-    "max_tries": "99",
-    "active": "0",
-    "files": [
-        ""
-    ],
+    "active": true,
     "author": "Forest Anderson"
-  }
+}

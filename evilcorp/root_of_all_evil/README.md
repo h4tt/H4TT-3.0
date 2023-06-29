@@ -10,11 +10,7 @@
     "hint": "man sudo",
     "link": "https://evilcorp.h4tt.ca",
     "points": "100",
-    "max_tries": "99",
-    "active": "0",
-    "files": [
-        ""
-    ],
+    "active": true,
     "required": "EC 5: What Bash?",
     "author": "Francisco Trindade"
 }

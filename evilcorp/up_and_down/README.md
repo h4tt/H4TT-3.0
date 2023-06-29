@@ -10,11 +10,7 @@
     "hint": "What file is similar to /etc/passwd",
     "link": "https://evilcorp.h4tt.ca",
     "points": "60",
-    "max_tries": "99",
-    "active": "0",
-    "files": [
-        ""
-    ],
+    "active": true,
     "required": "EC 3: A Weak Login",
     "author": "Francisco Trindade"
 }

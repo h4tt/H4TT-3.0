@@ -10,11 +10,7 @@
     "hint": "Ever built a dictionary?",
     "link": "https://evilcorp.h4tt.ca",
     "points": "40",
-    "max_tries": "99",
-    "active": "0",
-    "files": [
-        ""
-    ],
+    "active": true,
     "required": "EC 1: Welcome to Evil Corp",
     "author": "Francisco Trindade"
 }

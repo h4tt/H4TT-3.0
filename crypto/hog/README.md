@@ -9,9 +9,7 @@
     "description": "EEMEMEMEMEEEEEEEEMMEEMEMMEMEMMEMEMMEMEMMEEEEMEEEEEEEEMEEMMEMEMMEE\n\nformat: FLAG{UPPERCASE-WITH-DASHES-FOR-SPACE}",
     "link": "",
     "points": "50",
-    "max_tries": "99",
-    "active": "0",
-    "files": [],
+    "active": true,
     "author": "Dave Petrasovic"
 }
 ```

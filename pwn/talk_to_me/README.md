@@ -9,9 +9,7 @@
     "description": "We got into the Evilcorp CEO's family computer. Looks like something important was left lying around.",
     "link": "",
     "points": "60",
-    "max_tries": "99",
-    "active": "0",
-    "files": [],
+    "active": true,
     "author": "Matt Penny"
 }
 ```

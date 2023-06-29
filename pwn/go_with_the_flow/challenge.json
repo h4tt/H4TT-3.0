@@ -5,10 +5,6 @@
     "link": "",
     "points": "50",
     "flag": "flag{th3_cup_0v3rfl0with}",
-    "max_tries": "99",
-    "active": "0",
-    "files": [
-        "app.c"
-    ],
+    "active": true,
     "author": "Matt Langois"
 }

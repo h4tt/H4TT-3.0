@@ -9,11 +9,7 @@
     "description": "Flag format flag{WORDS_UPPER_CASE}",
     "link": "",
     "points": "15",
-    "max_tries": "99",
-    "active": "0",
-    "files": [
-        ""
-    ],
+    "active": true,
     "author": "Forest Anderson"
 }
 ```

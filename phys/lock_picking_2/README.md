@@ -9,11 +9,7 @@
     "description": "Pick the basic locks 3-6",
     "link": "",
     "points": "35",
-    "max_tries": "99",
-    "active": "0",
-    "files": [
-        ""
-    ],
+    "active": true,
     "required": "Lock Picking 1",
     "author": "Forest Anderson"
 }

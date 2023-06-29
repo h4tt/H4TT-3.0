@@ -9,9 +9,7 @@
     "description": "LxrXLsgmbyStKmHsSjAujmAzn41kLlXFSIPkKmHsSjAujlWJnkc5n4AmK4A4Mtg6TJbC",
     "link": "",
     "points": "50",
-    "max_tries": "99",
-    "active": "0",
-    "files": [],
+    "active": true,
     "author": "Dave Petrasovic"
 }
 ```

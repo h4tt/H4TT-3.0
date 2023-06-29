@@ -5,10 +5,7 @@
   "link": "https://evilcorp.h4tt.ca/neon",
   "points": "50",
   "flag": "flag{r0b0ts_d0t_txt_1s_n0t_s3cur1ty}",
-  "max_tries": "99",
-  "active": "0",
-  "files": [
-  ],
+  "active": true,
   "author": "Dave Petrasovic",
   "instructions": "Run the node app."
 }

@@ -5,10 +5,6 @@
     "link": "",
     "points": "80",
     "flag": "flag{the_walls_are_ecb}",
-    "max_tries": "99",
-    "active": "0",
-    "files": [
-        "image.enc"
-    ],
+    "active": true,
     "author": "Forest Anderson"
-  }
+}

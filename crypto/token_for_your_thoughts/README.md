@@ -9,9 +9,7 @@
     "description": "We got word that Evilcorp is trying out a new authentication mechanism. It's pretty new and untested so I doubt it's secure. See if you can break it.",
     "link": "https://evilcorp.h4tt.ca/evilcorp-login",
     "points": "40",
-    "max_tries": "99",
-    "active": "0",
-    "files": [],
+    "active": true,
     "author": "Matt Penny",
     "instructions": "The nodejs challenge server needs to be hosted somewhere"
 }

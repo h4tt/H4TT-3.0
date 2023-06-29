@@ -5,10 +5,6 @@
     "link": "",
     "points": "60",
     "flag": "flag{sooo-djent}",
-    "max_tries": "99",
-    "active": "0",
-    "files": [
-        "challenge.wav"
-    ],
+    "active": true,
     "author": "Dave Petrasovic"
 }

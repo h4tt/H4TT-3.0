@@ -9,11 +9,7 @@
     "description": "What a sublime day!",
     "link": "",
     "points": "40",
-    "max_tries": "99",
-    "active": "0",
-    "files": [
-        "view.bmp"
-    ],
+    "active": true,
     "author": "Matt Langois"
 }
 ```

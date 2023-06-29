@@ -5,11 +5,7 @@
     "link": "",
     "points": "45",
     "flag": "flag{almost_a_picking_expert}",
-    "max_tries": "99",
-    "active": "0",
-    "files": [
-        ""
-    ],
+    "active": true,
     "required": "Lock Picking 3",
     "author": "Forest Anderson"
-  }
+}

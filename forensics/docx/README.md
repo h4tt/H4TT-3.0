@@ -9,11 +9,7 @@
     "description": "",
     "link": "",
     "points": "45",
-    "max_tries": "99",
-    "active": "0",
-    "files": [
-        "challenge.docx"
-    ],
+    "active": true,
     "author": "Dave Petrasovic"
 }
 ```

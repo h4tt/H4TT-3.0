@@ -9,8 +9,7 @@
     "description": "I lost my flag! Can you help me find it?",
     "link": "",
     "points": "100",
-    "max_tries": "99",
-    "active": "0",
+    "active": true,
     "files": [
         "readme.txt",
         "military_encryption"

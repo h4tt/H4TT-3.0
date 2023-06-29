@@ -6,11 +6,7 @@
     "link": "https://evilcorp.h4tt.ca/fast-cookie",
     "points": "25",
     "flag": "flag{l00k_47_7h3_h34d3r}",
-    "max_tries": "99",
-    "active": "0",
-    "files": [
-        ""
-    ],
+    "active": true,
     "required": "",
     "author": "Francisco Trindade"
 }
