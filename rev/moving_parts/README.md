@@ -8,7 +8,7 @@
     "category": "rev",
     "description": "Dynamic analysis just got a lot harder. Can you beat the oods?",
     "link": "",
-    "points": "60",
+    "points": 60,
     "active": true,
     "author": "Sean Maher"
 }

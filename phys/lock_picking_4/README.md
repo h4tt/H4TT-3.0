@@ -8,7 +8,7 @@
     "category": "phys",
     "description": "Pick the last 2 locks",
     "link": "",
-    "points": "45",
+    "points": 45,
     "active": true,
     "required": "Lock Picking 3",
     "author": "Forest Anderson"

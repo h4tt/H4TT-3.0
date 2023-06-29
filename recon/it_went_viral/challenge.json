@@ -3,7 +3,7 @@
   "category": "recon",
   "description": "",
   "link": "",
-  "points": "40",
+  "points": 40,
   "flag": "flag{v4lu4bl3_d4t4_c4n_b3_1n_pl4in_5ight}",
   "active": true,
   "author": "Dave Petrasovic",

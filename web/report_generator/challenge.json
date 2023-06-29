@@ -4,7 +4,7 @@
     "description": "Evil Corp threw up an interesting report generator",
     "hint": "The name field looks pretty interesting",
     "link": "https://evilcorp.h4tt.ca/generate-report",
-    "points": "20",
+    "points": 20,
     "flag": "flag{x55_m34n5_n0_v4l1d4710n}",
     "active": true,
     "required": "",

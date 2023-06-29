@@ -3,7 +3,7 @@
     "category": "web",
     "description": "You're looking pretty good today, but maybe a bit off center?",
     "link": "https://evilcorp.h4tt.ca",
-    "points": "15",
+    "points": 15,
     "flag": "flag{l00ks_lik3_art}",
     "active": true,
     "author": "Forest Anderson"

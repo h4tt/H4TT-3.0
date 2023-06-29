@@ -8,7 +8,7 @@
     "category": "crypto",
     "description": "We got word that Evilcorp is trying out a new authentication mechanism. It's pretty new and untested so I doubt it's secure. See if you can break it.",
     "link": "https://evilcorp.h4tt.ca/evilcorp-login",
-    "points": "40",
+    "points": 40,
     "active": true,
     "author": "Matt Penny",
     "instructions": "The nodejs challenge server needs to be hosted somewhere"

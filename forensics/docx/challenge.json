@@ -3,7 +3,7 @@
     "category": "forensics",
     "description": "",
     "link": "",
-    "points": "45",
+    "points": 45,
     "flag": "flag{h1dd3n-w0rdz}",
     "active": true,
     "author": "Dave Petrasovic"

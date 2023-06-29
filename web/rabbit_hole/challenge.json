@@ -4,7 +4,7 @@
     "description": "Follow the Rabbit Hole",
     "hint": "A Script might help ;)",
     "link": "https://evilcorp.h4tt.ca/rabbit-hole",
-    "points": "35",
+    "points": 35,
     "flag": "flag{7hr0u6h_7h3_l00k1n6_6l455}",
     "active": true,
     "required": "",

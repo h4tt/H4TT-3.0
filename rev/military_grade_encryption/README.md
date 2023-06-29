@@ -8,7 +8,7 @@
     "category": "rev",
     "description": "I lost my flag! Can you help me find it?",
     "link": "",
-    "points": "100",
+    "points": 100,
     "active": true,
     "files": [
         "readme.txt",

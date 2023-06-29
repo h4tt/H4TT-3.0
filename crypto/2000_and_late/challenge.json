@@ -3,7 +3,7 @@
   "category": "crypto",
   "description": "2225086084306530724665\n\nformat: flag{deciphered_text_lower-case_with_underscores_for_spaces}",
   "link": "",
-  "points": "30",
+  "points": 30,
   "flag": "flag{back_to_the_old_school}",
   "active": true,
   "author": "Dave Petrasovic"

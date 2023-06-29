@@ -3,7 +3,7 @@
     "category": "rev",
     "description": "The flag is somewhere in the binary. Can you find it?",
     "link": "",
-    "points": "50",
+    "points": 50,
     "flag": "flag{r3v_0r_crypt0}",
     "active": true,
     "author": "Sean Maher"

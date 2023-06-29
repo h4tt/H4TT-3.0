@@ -8,7 +8,7 @@
     "category": "stego",
     "description": "We found this strange file but have no idea what's inside it, or even what it is.",
     "link": "",
-    "points": "120",
+    "points": 120,
     "active": true,
     "author": "Matt Penny"
 }

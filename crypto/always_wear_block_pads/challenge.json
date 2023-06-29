@@ -3,7 +3,7 @@
     "category": "crypto",
     "description": "We obtained access to EvilCorp's debug tools for product keys. See if you can decipher their internal representation.",
     "link": "https://evilcorp.h4tt.ca/license",
-    "points": "150",
+    "points": 150,
     "flag": "flag{s3rge_wou1d_b3_pr0ud}",
     "active": true,
     "author": "Matt Penny",

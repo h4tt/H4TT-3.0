@@ -9,7 +9,7 @@
     "description": "Looks like the Evil Corp mole has given us an encrypted file, see if you can't decrypt it.",
     "hint": "Ever built a dictionary?",
     "link": "https://evilcorp.h4tt.ca",
-    "points": "40",
+    "points": 40,
     "active": true,
     "required": "EC 1: Welcome to Evil Corp",
     "author": "Francisco Trindade"

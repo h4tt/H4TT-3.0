@@ -8,7 +8,7 @@
     "category": "web",
     "description": "",
     "link": "https://evilcorp.h4tt.ca/neon",
-    "points": "50",
+    "points": 50,
     "active": true,
     "author": "Dave Petrasovic",
     "instructions": "Run the node app."

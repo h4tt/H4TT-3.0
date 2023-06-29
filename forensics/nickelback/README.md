@@ -8,7 +8,7 @@
     "category": "forensics",
     "description": "We found this Nickleback album on a disgruntled employee's computer. Are they hiding anything?",
     "link": "",
-    "points": "35",
+    "points": 35,
     "active": true,
     "author": "Dave Petrasovic"
 }

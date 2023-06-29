@@ -8,7 +8,7 @@
     "category": "rev",
     "description": "Can you hear the elves sending out packages?",
     "link": "",
-    "points": "40",
+    "points": 40,
     "active": true,
     "author": "Sean Maher"
 }

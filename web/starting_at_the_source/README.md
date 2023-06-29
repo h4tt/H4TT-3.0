@@ -9,7 +9,7 @@
     "description": "I think the developers at evilcorp left something accidentally",
     "hint": "ctrl+shift+i",
     "link": "https://evilcorp.h4tt.ca/",
-    "points": "10",
+    "points": 10,
     "active": true,
     "required": "",
     "author": "Francisco Trindade"

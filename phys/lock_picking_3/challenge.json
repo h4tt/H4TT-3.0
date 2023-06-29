@@ -3,7 +3,7 @@
     "category": "phys",
     "description": "Pick the next 2 locks",
     "link": "",
-    "points": "40",
+    "points": 40,
     "flag": "flag{not_hard_yet_4_me}",
     "active": true,
     "required": "Lock Picking 2",

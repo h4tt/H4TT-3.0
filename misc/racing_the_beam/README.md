@@ -8,7 +8,7 @@
     "category": "misc",
     "description": "We intercepted a secret file, but how can anything fit in 24K?!",
     "link": "",
-    "points": "40",
+    "points": 40,
     "active": true,
     "author": "Matt Penny"
 }

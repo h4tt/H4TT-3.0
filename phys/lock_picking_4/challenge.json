@@ -3,7 +3,7 @@
     "category": "phys",
     "description": "Pick the last 2 locks",
     "link": "",
-    "points": "45",
+    "points": 45,
     "flag": "flag{almost_a_picking_expert}",
     "active": true,
     "required": "Lock Picking 3",

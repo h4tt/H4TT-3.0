@@ -4,7 +4,7 @@
     "description": "I think the developers at evilcorp left something accidentally",
     "hint": "ctrl+shift+i",
     "link": "https://evilcorp.h4tt.ca/",
-    "points": "10",
+    "points": 10,
     "flag": "flag{r34d_7h3_50urc3}",
     "active": true,
     "required": "",

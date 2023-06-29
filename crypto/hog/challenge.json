@@ -3,7 +3,7 @@
   "category": "crypto",
   "description": "EEMEMEMEMEEEEEEEEMMEEMEMMEMEMMEMEMMEMEMMEEEEMEEEEEEEEMEEMMEMEMMEE\n\nformat: FLAG{UPPERCASE-WITH-DASHES-FOR-SPACE}",
   "link": "",
-  "points": "50",
+  "points": 50,
   "flag": "FLAG{MMMM-BACON}",
   "active": true,
   "author": "Dave Petrasovic"

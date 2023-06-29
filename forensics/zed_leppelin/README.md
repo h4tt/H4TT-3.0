@@ -8,7 +8,7 @@
     "category": "forensics",
     "description": "Flag format flag{WORDS_UPPER_CASE}",
     "link": "",
-    "points": "15",
+    "points": 15,
     "active": true,
     "author": "Forest Anderson"
 }

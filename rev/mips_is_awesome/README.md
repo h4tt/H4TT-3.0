@@ -8,7 +8,7 @@
     "category": "rev",
     "description": "Who needs x86 when you have MIPS?",
     "link": "",
-    "points": "20",
+    "points": 20,
     "active": true,
     "author": "Matt Langois"
 }

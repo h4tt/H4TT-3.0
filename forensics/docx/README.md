@@ -8,7 +8,7 @@
     "category": "forensics",
     "description": "",
     "link": "",
-    "points": "45",
+    "points": 45,
     "active": true,
     "author": "Dave Petrasovic"
 }
